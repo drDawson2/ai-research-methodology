@@ -57,29 +57,7 @@
                 <p class="intro-text">This timeline documents the AI methodology development from October 28 - November 5, 2025. Each session represents collaborative work building the research management system, with transparent documentation of what was built, why, and how.</p>
             </div>
             
-            <!-- FILTER CONTROLS -->
-            <div class="filter-bar">
-                <input type="text" placeholder="🔍 Search sessions by keyword..." id="sessionSearch">
-                
-                <div style="margin-top: 10px;">
-                    <label>Filter by phase: 
-                        <select name="phase" id="phaseFilter">
-                            <option value="all">All Phases</option>
-                            <option value="setup">Setup</option>
-                            <option value="theory">Theory</option>
-                            <option value="synthesis">Synthesis</option>
-                            <option value="coding">Coding</option>
-                            <option value="meta">Meta</option>
-                        </select>
-                    </label>
-                    
-                    <button onclick="clearFilters()" class="btn-secondary" style="margin-left: 15px;">Clear Filters</button>
-                </div>
-                
-                <p class="results-count" style="margin-top: 10px;">Showing: 8 sessions</p>
-            </div>
-            
-            <!-- PHASE OVERVIEW -->
+            <!-- PHASE OVERVIEW - ABOVE SEARCH BAR -->
             <div class="callout">
                 <h2>Phase Progression (Oct 28 - Nov 5, 2025)</h2>
                 <div class="mermaid">
@@ -104,7 +82,29 @@ timeline
                 </ul>
             </div>
             
-            <!-- SESSION CARDS -->
+            <!-- FILTER CONTROLS -->
+            <div class="filter-bar">
+                <input type="text" placeholder="🔍 Search sessions by keyword..." id="sessionSearch">
+                
+                <div style="margin-top: 10px;">
+                    <label>Filter by phase: 
+                        <select name="phase" id="phaseFilter">
+                            <option value="all">All Phases</option>
+                            <option value="setup">Setup</option>
+                            <option value="theory">Theory</option>
+                            <option value="synthesis">Synthesis</option>
+                            <option value="coding">Coding</option>
+                            <option value="meta">Meta</option>
+                        </select>
+                    </label>
+                    
+                    <button onclick="clearFilters()" class="btn-secondary" style="margin-left: 15px;">Clear Filters</button>
+                </div>
+                
+                <p class="results-count" style="margin-top: 10px;">Showing: 8 sessions</p>
+            </div>
+            
+            <!-- SESSION CARDS - ALL 8 SESSIONS COMPLETE -->
             <div id="sessions-container">
                 
                 <!-- SESSION 1 -->
@@ -114,70 +114,225 @@ timeline
                         <p class="session-meta">October 28, 2025 • 90 minutes • Phase: Setup</p>
                     </div>
                     <div class="session-summary">
-                        <p><strong>Quick Summary:</strong> Built integrated research management system combining Zotero (references) and Obsidian (notes). Researcher had existing library, needed better organization for dissertation work.</p>
-                        <p><strong>Key Output:</strong> 6-collection Zotero structure, 7-folder Obsidian vault, note-taking templates</p>
-                        <p><strong>Integrity:</strong> System design collaborative, implementation researcher's independent work</p>
-                        <p style="margin-top: 10px;"><em>Click to expand full details ▼</em></p>
+                        <p><strong>Quick Summary:</strong> Built integrated research management system combining Zotero (references) and Obsidian (notes).</p>
+                        <p><strong>Key Output:</strong> 6-collection Zotero structure, 7-folder Obsidian vault</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
                     </div>
                     <div class="session-content">
-                        <h4>Context & Starting Point</h4>
+                        <h4>Context</h4>
                         <ul>
                             <li>Had existing Zotero library with 91+ sources</li>
-                            <li>Identified need for better organization</li>
-                            <li>Had acquired core theory sources (Hall, Weick, Manning, Savickas)</li>
+                            <li>Needed better organization for dissertation work</li>
                         </ul>
-                        
-                        <h4>Independent Work Before Collaboration</h4>
-                        <ul>
-                            <li>Accumulated 91+ sources in Zotero over time</li>
-                            <li>Identified organizational problem independently</li>
-                            <li>Brought clear need: better system for dissertation work</li>
-                        </ul>
-                        
                         <h4>Collaborative Work</h4>
-                        <p><strong>Developed 6-collection dissertation structure:</strong></p>
-                        <ol>
-                            <li>Core Theory & Framework</li>
-                            <li>Population & Context</li>
-                            <li>Phenomenon/Intervention</li>
-                            <li>Methodology & Methods</li>
-                            <li>Emergent Themes (for later)</li>
-                            <li>Supplementary & Background</li>
-                        </ol>
-                        
-                        <p><strong>Created Obsidian vault architecture (7 folders):</strong></p>
-                        <ul>
-                            <li>00 - Inbox</li>
-                            <li>01 - Literature Notes</li>
-                            <li>02 - Concept Notes</li>
-                            <li>03 - Framework Development</li>
-                            <li>04 - Data & Analysis</li>
-                            <li>05 - Writing Drafts</li>
-                            <li>06 - Advisor Meetings</li>
-                            <li>07 - Project Management</li>
-                        </ul>
-                        
-                        <h4>Ownership Statement</h4>
-                        <ul>
-                            <li><strong>System design</strong> = Collaborative (researcher brought needs, AI brought patterns, built together)</li>
-                            <li><strong>Implementation</strong> = Researcher's independent work</li>
-                            <li><strong>Guide creation</strong> = Researcher's independent work</li>
-                            <li><strong>Problem-solving</strong> = Researcher's independent work</li>
-                        </ul>
+                        <p><strong>6-collection structure:</strong> Core Theory, Population & Context, Phenomenon, Methodology, Emergent Themes, Supplementary</p>
+                        <p><strong>7-folder Obsidian vault:</strong> Inbox, Literature Notes, Concept Notes, Framework, Data & Analysis, Writing Drafts, Advisor Meetings, Project Management</p>
                     </div>
                     <div class="session-tags">
                         <span class="tag">#setup</span>
                         <span class="tag">#systems</span>
-                        <span class="tag">#tools</span>
-                        <span class="tag">#organization</span>
                     </div>
                 </div>
                 
-                <!-- Add remaining sessions 2-8 here following same structure -->
-                <p style="text-align: center; padding: 40px; background: var(--cream-light); margin: 20px 0; border: 2px dashed var(--soft-amber);">
-                    <strong>Sessions 2-8 full documentation:</strong> Same detailed structure as Session 1 above.<br>
-                    <em>(Due to space, showing Session 1 as example. All sessions follow identical format with complete documentation.)</em>
-                </p>
+                <!-- SESSION 2 -->
+                <div class="session-card theory" data-phase="theory" id="session2">
+                    <div class="session-header">
+                        <h3>Session 2: Savickas (2005) Reading & Annotated Bibliography</h3>
+                        <p class="session-meta">October 29, 2025 • 2.5 hours • Phase: Theory</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> Read Savickas independently, created annotations, wrote 500-word memo, then used AI for formatting guidance.</p>
+                        <p><strong>Key Output:</strong> WHY/WHAT/HOW framework, annotated bibliography</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>Independent Work Before</h4>
+                        <ul>
+                            <li>Read Savickas (2005) pp. 1-4 independently</li>
+                            <li>Created Zotero annotations (timestamped 10/28/25)</li>
+                            <li>Wrote 500-word analytical memo</li>
+                            <li>Identified WHY/WHAT/HOW framework independently</li>
+                        </ul>
+                        <h4>Key Insight (Researcher's)</h4>
+                        <ul>
+                            <li><strong>WHY:</strong> Career construction provides meaning</li>
+                            <li><strong>WHAT:</strong> Self and identity through narrative</li>
+                            <li><strong>HOW:</strong> Social processes and life themes</li>
+                        </ul>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#theory</span>
+                        <span class="tag">#reading</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 3 -->
+                <div class="session-card theory" data-phase="theory" id="session3">
+                    <div class="session-header">
+                        <h3>Session 3: Hall (2003) Chapter 1 Reading & Notes</h3>
+                        <p class="session-meta">November 1, 2025 • 3.5 hours • Phase: Theory</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> Read Hall's Protean Career theory, handwritten annotations, 1200-word reflection.</p>
+                        <p><strong>Key Output:</strong> Internal/external distinction, potential pre-codes</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>Independent Work Before</h4>
+                        <ul>
+                            <li>Read Hall (2003) Ch 1 pp. 1-12 (physical book)</li>
+                            <li>Created handwritten annotations</li>
+                            <li>Typed 1200-word reflection</li>
+                            <li>Generated original insight: Internal (Hall) vs. external (Savickas) distinction</li>
+                        </ul>
+                        <h4>Key Insight</h4>
+                        <p>Internal/external distinction became foundation for theory integration—emerged from independent reading.</p>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#theory</span>
+                        <span class="tag">#hall</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 4 -->
+                <div class="session-card meta" data-phase="meta" id="session4">
+                    <div class="session-header">
+                        <h3>Session 4: Academic Integrity Framework Discussion</h3>
+                        <p class="session-meta">November 1, 2025 • 45 minutes • Phase: Meta</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> Proactive concern about how collaboration might be perceived.</p>
+                        <p><strong>Key Output:</strong> Four bright line tests, appropriate vs. inappropriate framework</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>Four Bright Line Tests Developed</h4>
+                        <ol>
+                            <li><strong>Advisor transparency:</strong> Would I show this chat to my advisor?</li>
+                            <li><strong>Independent understanding:</strong> Can I explain without the chat?</li>
+                            <li><strong>Source engagement:</strong> Did I read sources myself?</li>
+                            <li><strong>Authorship:</strong> Did I write dissertation content myself?</li>
+                        </ol>
+                        <h4>Core Distinction</h4>
+                        <p>✓ Appropriate: AI as thinking partner | ✗ Inappropriate: AI as ghostwriter</p>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#integrity</span>
+                        <span class="tag">#ethics</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 5 -->
+                <div class="session-card meta" data-phase="meta" id="session5">
+                    <div class="session-header">
+                        <h3>Session 5: AI Limitations Discussion - Date Confusion</h3>
+                        <p class="session-meta">November 1, 2025 • 20 minutes • Phase: Meta</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> Claude kept getting confused about dates despite corrections.</p>
+                        <p><strong>Key Output:</strong> Understanding of AI limitations, orientation protocol thinking</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>What Happened</h4>
+                        <p>Despite researcher repeatedly stating correct date, Claude kept questioning it.</p>
+                        <h4>Critical Insight</h4>
+                        <p><strong>When researcher and AI conflict, trust researcher.</strong> Researcher is authority on lived reality.</p>
+                        <h4>Why This Strengthens Integrity</h4>
+                        <p>Demonstrates: Reality-testing AI outputs, maintaining ground truth, not blindly accepting information, critical engagement.</p>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#limitations</span>
+                        <span class="tag">#boundaries</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 6 - FEATURED -->
+                <div class="session-card synthesis featured" data-phase="synthesis" id="session6">
+                    <div class="session-header">
+                        <h3>⭐ Session 6: Hall + Savickas Theoretical Synthesis (FEATURED)</h3>
+                        <p class="session-meta">November 2, 2025 • 2 hours • Phase: Synthesis</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>🌟 FEATURED SESSION</strong> - Demonstrates methodology at work</p>
+                        <p><strong>Quick Summary:</strong> Theoretical synthesis through discussion board assignment. Critical moment: researcher chose question-based approach to maintain authorship.</p>
+                        <p><strong>Key Output:</strong> 355-word framework, Hall primary/Savickas sensitizing positioning</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>🚨 Critical Integrity Moment</h4>
+                        <p>When Claude provided example language, researcher <strong>immediately asked:</strong></p>
+                        <p style="font-style: italic; padding: 15px; background: var(--cream-light);">"Is what you're suggesting a significant enough shift that the content shifts from being mine to yours?"</p>
+                        <p><strong>Researcher's Decision:</strong> "I would like to do that but by responding to prompting questions from you... I will draft a response."</p>
+                        <h4>Synthesis Frameworks Developed</h4>
+                        <ul>
+                            <li><strong>Hall → PRIMARY:</strong> Self-directed career behavior</li>
+                            <li><strong>Savickas → SENSITIZING:</strong> Broader influences</li>
+                            <li><strong>Coding progression:</strong> Pre-codes → In Vivo → Secondary</li>
+                        </ul>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#synthesis</span>
+                        <span class="tag">#integrity-critical-moment</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 7 -->
+                <div class="session-card coding" data-phase="coding" id="session7">
+                    <div class="session-header">
+                        <h3>Session 7: Coding Assignment Planning & Integration</h3>
+                        <p class="session-meta">November 2, 2025 • 30 minutes • Phase: Coding</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> Class coding assignment planning. Selected research question and transcripts.</p>
+                        <p><strong>Key Output:</strong> Assignment plan, RQ, selected transcripts, coding approach</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>Work Completed</h4>
+                        <ul>
+                            <li>Selected research question from options</li>
+                            <li>Chose transcripts for coding assignment</li>
+                            <li>Organized theoretical synthesis into coding framework</li>
+                        </ul>
+                        <h4>Ownership</h4>
+                        <p>RQ selection from options, transcript selection delegated explicitly, framework is researcher's synthesis organized</p>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#coding</span>
+                        <span class="tag">#assignment</span>
+                    </div>
+                </div>
+                
+                <!-- SESSION 8 -->
+                <div class="session-card meta" data-phase="meta" id="session8">
+                    <div class="session-header">
+                        <h3>Session 8: Managing Collaboration Complexity</h3>
+                        <p class="session-meta">November 3, 2025 • 20 minutes • Phase: Meta</p>
+                    </div>
+                    <div class="session-summary">
+                        <p><strong>Quick Summary:</strong> After 8 sessions, recognized emerging complexity. Researcher raised concern about system becoming unwieldy.</p>
+                        <p><strong>Key Output:</strong> Hybrid approach, orientation protocol, chat lifecycle management</p>
+                        <p style="margin-top: 10px;"><em>Click to expand ▼</em></p>
+                    </div>
+                    <div class="session-content">
+                        <h4>Problem Identified</h4>
+                        <p>System strain: AI missing updates across multiple chats, researcher tracking becoming complex</p>
+                        <h4>Solutions Developed</h4>
+                        <ul>
+                            <li>Hybrid approach selected</li>
+                            <li>Orientation protocol for new chats</li>
+                            <li>Chat lifecycle management</li>
+                            <li>Regular check-ins established</li>
+                        </ul>
+                        <h4>Key Insight</h4>
+                        <p>Proactive system management demonstrates researcher directing AI, not vice versa</p>
+                    </div>
+                    <div class="session-tags">
+                        <span class="tag">#meta</span>
+                        <span class="tag">#system-management</span>
+                    </div>
+                </div>
                 
             </div>
             
