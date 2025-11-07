@@ -10,6 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: {
+            primaryColor: '#e8d9c4',
+            primaryTextColor: '#2d3224',
+            primaryBorderColor: '#6b4423',
+            lineColor: '#6b4423',
+            secondaryColor: '#f4ebe0',
+            tertiaryColor: '#c4975e'
+        }});
+    </script>
 </head>
 <body>
     <div class="container">
@@ -84,17 +95,21 @@
             <div class="callout timeline">
                 <h2>Project Development: The Preparation Phase</h2>
                 
-                <div class="timeline-visual">
-EdD Start      Pause           Preparation      Return to<br>
-Jan 2022 ──────────────────────●─ Oct 2025 ──────→ Spring 2025<br>
-                               |<br>
-                  AI Methodology Development<br>
-                  Theory exploration<br>
-                  System building<br>
-                  Protocol testing
+                <div class="mermaid">
+gantt
+    title EdD Journey & AI Methodology Development
+    dateFormat YYYY-MM
+    section EdD
+    EdD Start :milestone, 2022-01, 0d
+    Pause :crit, 2022-04, 2025-01
+    Return :milestone, 2025-01, 0d
+    section AI Development
+    Preparation :active, 2025-05, 2025-09
+    AI Collab Begins :milestone, 2025-10, 0d
+    Intensive Dev :done, 2025-10, 2025-11
                 </div>
                 
-                <p>This methodology development began in October 2025, several months after returning to active dissertation work in Spring 2025. This preparation phase was intentional: build robust systems and test collaborative approaches before the pressure of data collection and analysis.</p>
+                <p style="margin-top: 20px;">This methodology development began in October 2025, several months after returning to active dissertation work in Spring 2025. This preparation phase was intentional: build robust systems and test collaborative approaches before the pressure of data collection and analysis.</p>
                 
                 <p><strong>Key phases:</strong></p>
                 <ul>
@@ -154,9 +169,9 @@ Jan 2022 ──────────────────────●�
                     
                     <p><strong>Facilitation Principle → AI Application:</strong></p>
                     <ul>
-                        <li><strong>Hold space for exploration</strong> → Structured prompts that activate thinking rather than provide answers</li>
+                        <li><strong>Hold space for exploration</strong> → Structured prompts that activate thinking</li>
                         <li><strong>Allow organic evolution</strong> → Iterative refinement based on actual use</li>
-                        <li><strong>Prompt and prod, don't direct</strong> → Questions that deepen analysis rather than shortcuts that bypass it</li>
+                        <li><strong>Prompt and prod, don't direct</strong> → Questions that deepen analysis</li>
                     </ul>
                     
                     <h3>Iterative Refinement Through Use</h3>
@@ -169,14 +184,6 @@ Jan 2022 ──────────────────────●�
                         <li>Revise and document</li>
                         <li>Share learning</li>
                     </ol>
-                    
-                    <p style="margin-top: 20px;">This approach aligns with:</p>
-                    <ul>
-                        <li>Reflexive practice in qualitative research</li>
-                        <li>Iterative design in educational technology</li>
-                        <li>Transparency in methodological innovation</li>
-                        <li>Facilitation principles from professional development work</li>
-                    </ul>
                     
                     <div class="callout">
                         <p>The consistency across contexts—facilitating humans, collaborating with AI, conducting research—isn't coincidental. It's the same framework applied to different domains: create conditions for growth, maintain agency, build toward independence.</p>
@@ -212,8 +219,6 @@ Jan 2022 ──────────────────────●�
                 </div>
                 
                 <p style="margin-top: 20px;">This website serves as a working example of the collaborative methodology it documents: the researcher maintained full intellectual ownership and decision-making authority, while AI assistance enhanced technical execution and presentation.</p>
-                
-                <p>The development process itself followed the framework's principles: researcher provides vision and requirements → AI implements technically → researcher reviews and refines → iterative improvement.</p>
                 
                 <a href="framework.html" class="btn-secondary">→ Read Full Academic Integrity Framework</a>
             </div>
