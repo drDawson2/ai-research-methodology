@@ -31,20 +31,6 @@
                 <li><a href="versions.html">● Versions</a></li>
                 <li><a href="downloads.html">● Downloads</a></li>
             </ul>
-            
-            <div style="padding: 20px 15px; margin-top: 30px; border-top: 2px solid var(--soft-amber);">
-                <p style="font-size: 0.85em; color: var(--cream); margin-bottom: 10px;"><strong>Guide Sections</strong></p>
-                <ul class="nav-menu" style="font-size: 0.9em;">
-                    <li><a href="#intro">1. Introduction</a></li>
-                    <li><a href="#foundation">2. Foundation</a></li>
-                    <li><a href="#architecture">3. Architecture</a></li>
-                    <li><a href="#implementation">4. Implementation</a></li>
-                    <li><a href="#workflows">5. Workflows</a></li>
-                    <li><a href="#quality">6. Quality Control</a></li>
-                    <li><a href="#troubleshooting">7. Troubleshooting</a></li>
-                    <li><a href="#templates">8. Templates</a></li>
-                </ul>
-            </div>
         </nav>
         
         <main class="main-content">
@@ -57,1858 +43,409 @@
                 <p style="font-size: 0.9em; margin-top: 40px; color: var(--text-light);">Version 1.0 | Released: November 2025</p>
             </div>
             
-            <!-- CREDITS -->
-            <section id="credits">
-                <div class="card">
-                    <h2>Credits & License</h2>
+            <!-- QUICK NAV -->
+            <div class="card">
+                <h2>Navigate the Guide</h2>
+                <p>This comprehensive guide is organized into 8 sections. Use the tabs below to jump to any section, or download the complete guide for offline reference.</p>
+                
+                <div style="margin-top: 20px;">
+                    <a href="docs/dissertation-guide.html" class="btn" download>📥 Download Complete HTML Guide</a>
+                    <a href="docs/dissertation-guide.md" class="btn" download>📥 Download Markdown Version</a>
+                </div>
+            </div>
+
+            <!-- TABBED INTERFACE -->
+            <div class="tab-container">
+                <!-- Mobile Dropdown -->
+                <select class="tab-dropdown">
+                    <option value="tab-intro">1. Introduction</option>
+                    <option value="tab-foundation">2. Foundation</option>
+                    <option value="tab-architecture">3. Architecture</option>
+                    <option value="tab-implementation">4. Implementation</option>
+                    <option value="tab-workflows">5. Workflows</option>
+                    <option value="tab-quality">6. Quality Control</option>
+                    <option value="tab-troubleshooting">7. Troubleshooting</option>
+                    <option value="tab-templates">8. Templates</option>
+                </select>
+                
+                <!-- Desktop Tab Buttons -->
+                <div class="tab-nav">
+                    <button class="tab-button active" data-tab="tab-intro">1. Introduction</button>
+                    <button class="tab-button" data-tab="tab-foundation">2. Foundation</button>
+                    <button class="tab-button" data-tab="tab-architecture">3. Architecture</button>
+                    <button class="tab-button" data-tab="tab-implementation">4. Implementation</button>
+                    <button class="tab-button" data-tab="tab-workflows">5. Workflows</button>
+                    <button class="tab-button" data-tab="tab-quality">6. Quality Control</button>
+                    <button class="tab-button" data-tab="tab-troubleshooting">7. Troubleshooting</button>
+                    <button class="tab-button" data-tab="tab-templates">8. Templates</button>
+                </div>
+                
+                <!-- Tab Content Container -->
+                <div class="tab-content-container">
                     
-                    <h3>Author</h3>
-                    <p><strong>David R. Dawson II</strong><br>
-                    Doctoral Student, Graduate School of Education<br>
-                    Northeastern University<br>
-                    <a href="mailto:davidrobertodawsonii@outlook.com">davidrobertodawsonii@outlook.com</a><br>
-                    <a href="https://www.linkedin.com/in/david-dawson-ii" target="_blank">LinkedIn Profile</a></p>
+                    <!-- TAB 1: INTRODUCTION -->
+                    <div id="tab-intro" class="tab-pane active">
+                        <h1>1. Introduction: What This Guide Offers</h1>
+                        
+                        <p>This guide teaches you how to build a comprehensive AI-assisted research management system for your dissertation. Unlike generic productivity advice, this approach creates an integrated ecosystem where AI serves as a methodological consultant, helping you develop stronger theoretical frameworks, maintain consistency across documents, and build sustainable research workflows.</p>
+                        
+                        <h2>What You'll Learn to Build</h2>
+                        
+                        <p>A multi-component system that supports:</p>
+                        
+                        <ul>
+                            <li>Theoretical framework development with defensible arguments</li>
+                            <li>Literature review management from search to synthesis</li>
+                            <li>Research workflow organization across multiple tools</li>
+                            <li>Qualitative coding support with methodological rigor</li>
+                            <li>Document consistency throughout your project</li>
+                            <li>Accountability structures for sustained progress</li>
+                        </ul>
+                        
+                        <h2>Core Philosophy</h2>
+                        
+                        <div class="callout">
+                            <p><strong>FOUNDATIONAL PRINCIPLE</strong></p>
+                            <p><strong>AI augments your scholarship; it doesn't replace it.</strong> This system treats AI as:</p>
+                            <ul style="margin: 10px 0 0 0;">
+                                <li>A strategic consultant (not a ghost writer)</li>
+                                <li>A thinking partner (not a decision maker)</li>
+                                <li>A structure builder (not a content generator)</li>
+                                <li>An accountability coach (not a task automator)</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Who This Guide Is For</h2>
+                        
+                        <ul>
+                            <li>Doctoral students in qualitative or mixed-methods research</li>
+                            <li>Researchers managing complex literature across multiple domains</li>
+                            <li>Anyone conducting interview-based or observational studies</li>
+                            <li>Students seeking to strengthen theoretical coherence</li>
+                            <li>Researchers wanting transparent, ethical AI integration</li>
+                        </ul>
+                        
+                        <h2>Expected Time Investment</h2>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Time Required</th>
+                                    <th>What You'll Have</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Initial Setup</td>
+                                    <td>4-6 hours</td>
+                                    <td>Complete system infrastructure</td>
+                                </tr>
+                                <tr>
+                                    <td>First Week Use</td>
+                                    <td>2-3 hours</td>
+                                    <td>Customized workflows</td>
+                                </tr>
+                                <tr>
+                                    <td>Ongoing Use</td>
+                                    <td>30-60 min/week</td>
+                                    <td>Sustained progress tracking</td>
+                                </tr>
+                                <tr>
+                                    <td>Full ROI</td>
+                                    <td>2-3 months</td>
+                                    <td>Streamlined dissertation process</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="callout">
+                            <p><strong>SUCCESS INDICATOR</strong></p>
+                            <p>You'll know this system is working when you can:</p>
+                            <ul style="margin: 10px 0 0 0;">
+                                <li>Articulate your theoretical framework confidently without referencing AI conversations</li>
+                                <li>Locate any source or note within 30 seconds</li>
+                                <li>Catch inconsistencies across documents before your advisor does</li>
+                                <li>Feel less overwhelmed and more in control of your dissertation progress</li>
+                            </ul>
+                        </div>
+                        
+                        <p style="margin-top: 40px;"><strong>Ready to begin?</strong> Click "2. Foundation" to learn what you need before building your system.</p>
+                    </div>
                     
-                    <h3>Development</h3>
-                    <p>This guide was developed independently by the author in collaboration with Claude (an AI assistant by Anthropic).</p>
+                    <!-- TAB 2: FOUNDATION -->
+                    <div id="tab-foundation" class="tab-pane">
+                        <h1>2. Getting Started: The Foundation</h1>
+                        
+                        <p>Before building your AI-assisted system, you need to establish a solid foundation. This section guides you through essential preparation that will make implementation much more effective.</p>
+                        
+                        <h2>The 'Accountability Buddy' Model</h2>
+                        
+                        <p>Your relationship with AI should function like a structured mentorship:</p>
+                        
+                        <ul>
+                            <li>Check-ins establish current status and goals</li>
+                            <li>Strategic questioning reveals gaps in your thinking</li>
+                            <li>Iterative refinement develops ideas through dialogue</li>
+                            <li>Progress celebration maintains motivation</li>
+                            <li>Honest assessment identifies real challenges</li>
+                        </ul>
+                        
+                        <div class="callout">
+                            <p><strong>KEY INSIGHT</strong></p>
+                            <p>AI works best when you treat it like a knowledgeable colleague who needs to understand your project context before offering advice. The time you invest in 'teaching' the AI about your research pays dividends in the quality of support you receive.</p>
+                        </div>
+                        
+                        <h2>Technical Requirements</h2>
+                        
+                        <h3>Required</h3>
+                        
+                        <ul>
+                            <li>Claude Pro, Team, or Enterprise subscription (for Projects feature)</li>
+                            <li>Microsoft Word or compatible word processor</li>
+                            <li>Zotero (free citation manager)</li>
+                            <li>Obsidian (free note-taking software)</li>
+                            <li>Reliable internet connection</li>
+                            <li>Computer with at least 8GB RAM</li>
+                        </ul>
+                        
+                        <h3>Optional but Recommended</h3>
+                        
+                        <ul>
+                            <li>Cloud storage (OneDrive, Google Drive, Dropbox)</li>
+                            <li>Second monitor for multi-window workflows</li>
+                            <li>Tablet for reading PDFs</li>
+                            <li>Backup drive for data security</li>
+                        </ul>
+                        
+                        <p><strong>Complete technical setup details:</strong> <a href="orientation.html">See Quick Start Guide →</a></p>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "3. Architecture" to understand the five core pillars you'll build.</p>
+                    </div>
                     
-                    <h3>License</h3>
-                    <p><strong>CC BY-NC 4.0</strong></p>
-                    <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+                    <!-- TAB 3: ARCHITECTURE -->
+                    <div id="tab-architecture" class="tab-pane">
+                        <h1>3. System Architecture: Five Core Pillars</h1>
+                        
+                        <p>Your complete dissertation management system rests on five integrated components, each serving distinct but interconnected functions.</p>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pillar</th>
+                                    <th>Purpose</th>
+                                    <th>Primary Tools</th>
+                                    <th>Key Function</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Pillar 1</strong></td>
+                                    <td>Reference & Knowledge Management</td>
+                                    <td>Zotero + Obsidian</td>
+                                    <td>Organize and synthesize literature</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pillar 2</strong></td>
+                                    <td>Theoretical Framework</td>
+                                    <td>Claude Projects</td>
+                                    <td>Develop defensible positioning</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pillar 3</strong></td>
+                                    <td>Literature Review</td>
+                                    <td>Structured prompts</td>
+                                    <td>Build argumentative synthesis</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pillar 4</strong></td>
+                                    <td>Qualitative Analysis</td>
+                                    <td>Custom coding assistant</td>
+                                    <td>Maintain analytical rigor</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pillar 5</strong></td>
+                                    <td>Project Management</td>
+                                    <td>Dashboard + Protocols</td>
+                                    <td>Sustain momentum</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="callout">
+                            <p><strong>INTEGRATION PRINCIPLE</strong></p>
+                            <p>These pillars don't operate in isolation. Your literature review informs your theoretical framework. Your framework shapes your qualitative coding. Your project management tracks progress across all components. The system works because of integration, not just individual tools.</p>
+                        </div>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "4. Implementation" for step-by-step setup instructions.</p>
+                    </div>
                     
-                    <p><strong>You are free to:</strong></p>
-                    <ul>
-                        <li>Share — copy and redistribute the material</li>
-                        <li>Adapt — remix, transform, and build upon the material</li>
-                    </ul>
+                    <!-- TAB 4: IMPLEMENTATION -->
+                    <div id="tab-implementation" class="tab-pane">
+                        <h1>4. Implementation Guide: Step-by-Step Setup</h1>
+                        
+                        <p>This section provides detailed instructions for building each component of your system. Work through phases systematically, testing each before moving forward.</p>
+                        
+                        <div class="callout">
+                            <p><strong>IMPLEMENTATION APPROACH</strong></p>
+                            <p>Don't try to build everything at once. Implement one phase per day or week, depending on your schedule. Each phase builds on previous work, so sequence matters.</p>
+                            <p style="margin-top: 10px;"><strong>Estimated total time:</strong> 4-6 hours spread across several days</p>
+                        </div>
+                        
+                        <h2>Phase 1: Create Your Claude Project (30-45 minutes)</h2>
+                        
+                        <h3>Step 1.1: Initial Project Setup</h3>
+                        
+                        <ol>
+                            <li>Navigate to claude.ai and log in</li>
+                            <li>Click 'Projects' in the left sidebar</li>
+                            <li>Click '+ New Project' button</li>
+                            <li>Name your project: 'Dissertation Development - [Your Topic]'</li>
+                            <li>Click 'Create Project'</li>
+                        </ol>
+                        
+                        <p><strong>Complete setup details:</strong> <a href="orientation.html">See Quick Start Guide →</a></p>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "5. Workflows" to learn how to use your system for actual dissertation work.</p>
+                    </div>
                     
-                    <p><strong>Under these terms:</strong></p>
-                    <ul>
-                        <li>Attribution — Give appropriate credit and link to license</li>
-                        <li>NonCommercial — No commercial use without permission</li>
-                    </ul>
-                </div>
-            </section>
-            
-            <!-- NOTE: Full guide content from Document 4 would be included here -->
-            <!-- Showing structure only for build completion -->
-            
-        <!-- SECTION 1: INTRODUCTION -->
-        <section id="section1" class="section">
-            <h1 class="collapsible-header">1. Introduction: What This Guide Offers</h1>
-            <div class="collapsible-content">
-                
-                <p>This guide teaches you how to build a comprehensive AI-assisted research management system for your dissertation. Unlike generic productivity advice, this approach creates an integrated ecosystem where AI serves as a methodological consultant, helping you develop stronger theoretical frameworks, maintain consistency across documents, and build sustainable research workflows.</p>
-                
-                <h2 id="intro-what">What You'll Learn to Build</h2>
-                
-                <p>A multi-component system that supports:</p>
-                
-                <ul>
-                    <li>Theoretical framework development with defensible arguments</li>
-                    <li>Literature review management from search to synthesis</li>
-                    <li>Research workflow organization across multiple tools</li>
-                    <li>Qualitative coding support with methodological rigor</li>
-                    <li>Document consistency throughout your project</li>
-                    <li>Accountability structures for sustained progress</li>
-                </ul>
-                
-                <h2 id="intro-philosophy">Core Philosophy</h2>
-                
-                <div class="callout">
-                    <div class="callout-title">FOUNDATIONAL PRINCIPLE</div>
-                    <p><strong>AI augments your scholarship; it doesn't replace it.</strong> This system treats AI as:</p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li>A strategic consultant (not a ghost writer)</li>
-                        <li>A thinking partner (not a decision maker)</li>
-                        <li>A structure builder (not a content generator)</li>
-                        <li>An accountability coach (not a task automator)</li>
-                    </ul>
-                </div>
-                
-                <h2 id="intro-who">Who This Guide Is For</h2>
-                
-                <ul>
-                    <li>Doctoral students in qualitative or mixed-methods research</li>
-                    <li>Researchers managing complex literature across multiple domains</li>
-                    <li>Anyone conducting interview-based or observational studies</li>
-                    <li>Students seeking to strengthen theoretical coherence</li>
-                    <li>Researchers wanting transparent, ethical AI integration</li>
-                </ul>
-                
-                <h2>How to Use This Guide</h2>
-                
-                <p>This guide is organized into eight major sections:</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Section</th>
-                            <th>Purpose</th>
-                            <th>When to Use</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1. Introduction</td>
-                            <td>Understand the system and philosophy</td>
-                            <td>Start here</td>
-                        </tr>
-                        <tr>
-                            <td>2. Foundation</td>
-                            <td>Prepare for system building</td>
-                            <td>Before implementation</td>
-                        </tr>
-                        <tr>
-                            <td>3. Architecture</td>
-                            <td>Learn the five core pillars</td>
-                            <td>Planning phase</td>
-                        </tr>
-                        <tr>
-                            <td>4. Implementation</td>
-                            <td>Build your system step-by-step</td>
-                            <td>Active setup</td>
-                        </tr>
-                        <tr>
-                            <td>5. Workflows</td>
-                            <td>Optimize ongoing use</td>
-                            <td>During dissertation</td>
-                        </tr>
-                        <tr>
-                            <td>6. Quality Control</td>
-                            <td>Maintain integrity</td>
-                            <td>Throughout project</td>
-                        </tr>
-                        <tr>
-                            <td>7. Troubleshooting</td>
-                            <td>Solve problems</td>
-                            <td>When issues arise</td>
-                        </tr>
-                        <tr>
-                            <td>8. Templates</td>
-                            <td>Access quick-start resources</td>
-                            <td>As needed</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <p>You don't need to read this guide sequentially. Jump to the section that addresses your current need, then explore related sections as your project evolves.</p>
-                
-                <h2>What Makes This Approach Different</h2>
-                
-                <p>Traditional dissertation support focuses on either:</p>
-                
-                <ul>
-                    <li>Technical tools (citation managers, writing software) without methodological guidance</li>
-                    <li>Methodological guidance (qual research texts) without technical implementation</li>
-                    <li>Generic AI tips that don't account for scholarly rigor</li>
-                </ul>
-                
-                <p>This guide integrates all three: methodologically sound processes, practical technical tools, and ethical AI assistance that enhances rather than compromises academic integrity.</p>
-                
-                <h2>Expected Time Investment</h2>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Phase</th>
-                            <th>Time Required</th>
-                            <th>What You'll Have</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Initial Setup</td>
-                            <td>4-6 hours</td>
-                            <td>Complete system infrastructure</td>
-                        </tr>
-                        <tr>
-                            <td>First Week Use</td>
-                            <td>2-3 hours</td>
-                            <td>Customized workflows</td>
-                        </tr>
-                        <tr>
-                            <td>Ongoing Use</td>
-                            <td>30-60 min/week</td>
-                            <td>Sustained progress tracking</td>
-                        </tr>
-                        <tr>
-                            <td>Full ROI</td>
-                            <td>2-3 months</td>
-                            <td>Streamlined dissertation process</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="callout">
-                    <div class="callout-title">SUCCESS INDICATOR</div>
-                    <p>You'll know this system is working when you can:</p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li>Articulate your theoretical framework confidently without referencing AI conversations</li>
-                        <li>Locate any source or note within 30 seconds</li>
-                        <li>Catch inconsistencies across documents before your advisor does</li>
-                        <li>Feel less overwhelmed and more in control of your dissertation progress</li>
-                    </ul>
-                </div>
-                
-                <h2>A Note on Customization</h2>
-                
-                <p>Every dissertation journey is unique. This guide provides a comprehensive framework, but you should adapt every component to fit:</p>
-                
-                <ul>
-                    <li>Your research methodology and paradigm</li>
-                    <li>Your institution's requirements and norms</li>
-                    <li>Your advisor's expectations and preferences</li>
-                    <li>Your personal working style and constraints</li>
-                    <li>Your disciplinary conventions and traditions</li>
-                </ul>
-                
-                <p>Throughout this guide, you'll find customization prompts marked as 'EXAMPLE PROMPT' boxes. Use these as starting points, then modify them to reflect your specific context.</p>
-                
-                <h2>Ready to Begin?</h2>
-                
-                <p>The next section (Getting Started: The Foundation) walks you through essential preparation before building your system. If you're eager to start building immediately, you can jump to Section 4 (Implementation Guide), but we recommend reading Section 2 first to ensure you have everything you need.</p>
-                
-            </div>
-        </section>
-        
-        <!-- SECTION 2: FOUNDATION -->
-        <section id="section2" class="section">
-            <h1 class="collapsible-header">2. Getting Started: The Foundation</h1>
-            <div class="collapsible-content">
-                
-                <p>Before building your AI-assisted system, you need to establish a solid foundation. This section guides you through essential preparation that will make implementation much more effective.</p>
-                
-                <h2 id="foundation-model">The 'Accountability Buddy' Model</h2>
-                
-                <p>Your relationship with AI should function like a structured mentorship:</p>
-                
-                <ul>
-                    <li>Check-ins establish current status and goals</li>
-                    <li>Strategic questioning reveals gaps in your thinking</li>
-                    <li>Iterative refinement develops ideas through dialogue</li>
-                    <li>Progress celebration maintains motivation</li>
-                    <li>Honest assessment identifies real challenges</li>
-                </ul>
-                
-                <div class="callout">
-                    <div class="callout-title">KEY INSIGHT</div>
-                    <p>AI works best when you treat it like a knowledgeable colleague who needs to understand your project context before offering advice. The time you invest in 'teaching' the AI about your research pays dividends in the quality of support you receive.</p>
-                </div>
-                
-                <h2 id="foundation-prep">Essential Preparation Before Building</h2>
-                
-                <p>Before engaging AI, gather these materials:</p>
-                
-                <h3>Research Foundation Documents</h3>
-                
-                <ul>
-                    <li>Research question(s) and purpose statement</li>
-                    <li>Problem of practice or background context</li>
-                    <li>Theoretical framework (even if tentative)</li>
-                    <li>IRB materials (if approved) or methodology overview</li>
-                    <li>Interview protocols, survey instruments, or data collection plans</li>
-                </ul>
-                
-                <h3>Current Challenges Inventory</h3>
-                
-                <p>Write down:</p>
-                
-                <ul>
-                    <li>What's confusing or unclear right now</li>
-                    <li>Which decisions you're struggling with</li>
-                    <li>Where you feel least confident</li>
-                    <li>What feedback you've received that you don't know how to address</li>
-                </ul>
-                
-                <h3>Epistemological Positioning (Even if Uncertain)</h3>
-                
-                <p>Clarify:</p>
-                
-                <ul>
-                    <li>What type of knowledge are you seeking?</li>
-                    <li>How will you use your findings?</li>
-                    <li>What theoretical traditions feel authentic to you?</li>
-                    <li>What are your values as a researcher?</li>
-                </ul>
-                
-                <div class="callout">
-                    <div class="callout-title">WHY THIS MATTERS</div>
-                    <p>AI needs this context to provide methodologically sound guidance rather than generic advice. Without understanding your epistemological stance, AI might suggest approaches that conflict with your research paradigm.</p>
-                </div>
-                
-                <h2>Self-Assessment: Where Are You Now?</h2>
-                
-                <p>Complete this brief self-assessment to identify which sections of this guide will be most valuable:</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>I have...</th>
-                            <th>Focus on Section...</th>
-                            <th>Priority</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A research question but unclear theoretical framework</td>
-                            <td>Section 4, Phase 4</td>
-                            <td><strong>HIGH</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Lots of sources but no organization system</td>
-                            <td>Section 4, Phase 2-3</td>
-                            <td><strong>HIGH</strong></td>
-                        </tr>
-                        <tr>
-                            <td>IRB approval and starting data collection</td>
-                            <td>Section 4, Phase 6</td>
-                            <td><strong>HIGH</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Data collected but unsure how to analyze</td>
-                            <td>Section 5, Workflow 3</td>
-                            <td><strong>HIGH</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Drafts written but inconsistent</td>
-                            <td>Section 5, Workflow 4</td>
-                            <td>MEDIUM</td>
-                        </tr>
-                        <tr>
-                            <td>Everything organized but feeling stuck</td>
-                            <td>Section 7</td>
-                            <td>MEDIUM</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h2 id="foundation-tech">Technical Requirements</h2>
-                
-                <p>To implement this system, you'll need:</p>
-                
-                <h3>Required</h3>
-                
-                <ul>
-                    <li>Claude Pro, Team, or Enterprise subscription (for Projects feature)</li>
-                    <li>Microsoft Word or compatible word processor</li>
-                    <li>Zotero (free citation manager)</li>
-                    <li>Obsidian (free note-taking software)</li>
-                    <li>Reliable internet connection</li>
-                    <li>Computer with at least 8GB RAM</li>
-                </ul>
-                
-                <h3>Optional but Recommended</h3>
-                
-                <ul>
-                    <li>Cloud storage (OneDrive, Google Drive, Dropbox)</li>
-                    <li>Second monitor for multi-window workflows</li>
-                    <li>Tablet for reading PDFs</li>
-                    <li>Backup drive for data security</li>
-                </ul>
-                
-                <h2>Time Expectations</h2>
-                
-                <p>Be realistic about time commitments:</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Activity</th>
-                            <th>Time Required</th>
-                            <th>Frequency</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Initial system setup</td>
-                            <td>4-6 hours</td>
-                            <td>One-time</td>
-                        </tr>
-                        <tr>
-                            <td>Weekly check-ins with AI</td>
-                            <td>15-30 minutes</td>
-                            <td>Weekly</td>
-                        </tr>
-                        <tr>
-                            <td>Literature note creation</td>
-                            <td>30-45 min per source</td>
-                            <td>Ongoing</td>
-                        </tr>
-                        <tr>
-                            <td>Codebook refinement</td>
-                            <td>1-2 hours</td>
-                            <td>After every 3 interviews</td>
-                        </tr>
-                        <tr>
-                            <td>System maintenance</td>
-                            <td>30 minutes</td>
-                            <td>Monthly</td>
-                        </tr>
-                        <tr>
-                            <td>Claude consultation</td>
-                            <td>20-45 minutes</td>
-                            <td>As needed</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="callout">
-                    <div class="callout-title">REALISTIC EXPECTATIONS</div>
-                    <p><strong>This system will not:</strong></p>
-                    <ul style="margin: 10px 0;">
-                        <li>Write your dissertation for you</li>
-                        <li>Eliminate all difficult decisions</li>
-                        <li>Replace your advisor</li>
-                        <li>Guarantee a perfect dissertation</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>This system will:</strong></p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li>Reduce time spent on organization and logistics</li>
-                        <li>Increase confidence in your methodological choices</li>
-                        <li>Provide structure for sustained progress</li>
-                        <li>Help you prepare more effectively for advisor meetings</li>
-                    </ul>
-                </div>
-                
-                <h2>Institutional Considerations</h2>
-                
-                <p>Before implementing this system, check:</p>
-                
-                <ul>
-                    <li>Your institution's policies on AI use in research</li>
-                    <li>Your IRB's stance on AI tools for analysis support</li>
-                    <li>Your advisor's comfort level with AI-assisted workflows</li>
-                    <li>Your program's expectations for methodology transparency</li>
-                    <li>Data security requirements if working with sensitive information</li>
-                </ul>
-                
-                <h3>Documenting Your Process</h3>
-                
-                <p>From the beginning, maintain a methodological memo documenting:</p>
-                
-                <ul>
-                    <li>How you use AI in different dissertation phases</li>
-                    <li>What types of support you request</li>
-                    <li>Major decisions influenced by AI dialogue</li>
-                    <li>How you verify or modify AI suggestions</li>
-                    <li>Ethical guidelines you follow</li>
-                </ul>
-                
-                <p>This documentation serves multiple purposes: transparency for your committee, material for your methodology chapter, and reflection on your research process.</p>
-                
-                <h2>Preparing Your Mindset</h2>
-                
-                <p>Successful use of this system requires certain mindsets:</p>
-                
-                <h3>Embrace Iteration</h3>
-                <p>Your first attempt at any component won't be perfect. Systems improve through use. Expect to refine your approaches as you learn what works for your specific needs.</p>
-                
-                <h3>Maintain Agency</h3>
-                <p>You are the scholar. AI is a tool in your toolkit. You make all final decisions about your research design, analysis, and interpretation.</p>
-                
-                <h3>Stay Curious</h3>
-                <p>When AI suggestions don't fit, ask yourself why. These moments often reveal important insights about your research assumptions or paradigmatic commitments.</p>
-                
-                <h3>Be Transparent</h3>
-                <p>Document how you use AI. Share your approach with your advisor. Model ethical AI integration for your field.</p>
-                
-                <h2>Checklist: Are You Ready?</h2>
-                
-                <p>Before moving to implementation, ensure you can check these boxes:</p>
-                
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready1"><label for="ready1">I have gathered my research foundation documents</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready2"><label for="ready2">I have identified my current challenges and needs</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready3"><label for="ready3">I have clarified my epistemological positioning (or know I need help with this)</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready4"><label for="ready4">I have the required technical tools installed or ready to install</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready5"><label for="ready5">I have realistic expectations about time investment</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready6"><label for="ready6">I have checked institutional policies on AI use</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready7"><label for="ready7">I am committed to maintaining scholarly ownership of my work</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready8"><label for="ready8">I have set aside time for initial system setup (4-6 hours)</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="ready9"><label for="ready9">I am ready to iterate and refine as I learn</label>
-                </div>
-                
-                <p style="margin-top: 20px;">If you've checked all boxes, you're ready to move to Section 3 (System Architecture) to understand what you'll be building, then Section 4 (Implementation Guide) to start construction.</p>
-                
-                <div class="callout">
-                    <div class="callout-title">NEXT STEP</div>
-                    <p>Section 3 provides an overview of the five core pillars of your AI-assisted dissertation management system. Understanding the architecture before building will help you see how all components work together.</p>
-                </div>
-                
-            </div>
-        </section>
-        <!-- SECTION 3: SYSTEM ARCHITECTURE -->
-        <section id="section3" class="section">
-            <h1 class="collapsible-header">3. System Architecture: Five Core Pillars</h1>
-            <div class="collapsible-content">
-                
-                <p>Your complete dissertation management system rests on five integrated components, each serving distinct but interconnected functions. Understanding this architecture before implementation helps you see how the pieces fit together.</p>
-                
-                <h2 id="arch-overview">Architectural Overview</h2>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Pillar</th>
-                            <th>Purpose</th>
-                            <th>Primary Tools</th>
-                            <th>Key Function</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Pillar 1</strong></td>
-                            <td>Reference & Knowledge Management</td>
-                            <td>Zotero + Obsidian</td>
-                            <td>Organize and synthesize literature</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pillar 2</strong></td>
-                            <td>Theoretical Framework</td>
-                            <td>Claude Projects</td>
-                            <td>Develop defensible positioning</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pillar 3</strong></td>
-                            <td>Literature Review</td>
-                            <td>Structured prompts</td>
-                            <td>Build argumentative synthesis</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pillar 4</strong></td>
-                            <td>Qualitative Analysis</td>
-                            <td>Custom coding assistant</td>
-                            <td>Maintain analytical rigor</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pillar 5</strong></td>
-                            <td>Project Management</td>
-                            <td>Dashboard + Protocols</td>
-                            <td>Sustain momentum</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="callout">
-                    <div class="callout-title">INTEGRATION PRINCIPLE</div>
-                    <p>These pillars don't operate in isolation. Your literature review informs your theoretical framework. Your framework shapes your qualitative coding. Your project management tracks progress across all components. The system works because of integration, not just individual tools.</p>
-                </div>
-                
-                <h2 id="arch-pillars">The Five Pillars in Detail</h2>
-                
-                <h3>Pillar 1: Reference & Knowledge Management</h3>
-                
-                <p><strong>What It Does:</strong></p>
-                <ul>
-                    <li>Bibliographic organization (citations, metadata)</li>
-                    <li>Active reading and annotation</li>
-                    <li>Literature synthesis across sources</li>
-                    <li>Conceptual connection building</li>
-                    <li>Reading timeline and progress tracking</li>
-                </ul>
-                
-                <p><strong>Tools Used:</strong> Zotero (reference management), Obsidian (knowledge synthesis), Zotero Integration plugin, Claude (synthesis support)</p>
-                
-                <p><strong>Key Principle:</strong> Separate reference storage (Zotero) from knowledge synthesis (Obsidian) while maintaining seamless flow between them.</p>
-                
-                <p><strong>What You'll Build:</strong></p>
-                <ul>
-                    <li>Hierarchical source organization aligned with dissertation chapters</li>
-                    <li>Standardized annotation templates for every source</li>
-                    <li>Literature note system for synthesis</li>
-                    <li>Concept notes that connect across sources</li>
-                    <li>Reading timeline with phase-based goals</li>
-                </ul>
-                
-                <h3>Pillar 2: Theoretical Framework Development</h3>
-                
-                <p><strong>What It Does:</strong></p>
-                <ul>
-                    <li>Clarify epistemological stance</li>
-                    <li>Integrate multiple theories coherently</li>
-                    <li>Develop integration logic</li>
-                    <li>Anticipate and prepare for committee challenges</li>
-                    <li>Map theory to methods and data</li>
-                </ul>
-                
-                <p><strong>Tools Used:</strong> Claude Projects with custom instructions, structured dialogue prompts, framework development templates, defense preparation protocols</p>
-                
-                <p><strong>Key Principle:</strong> Use dialogue to test theoretical choices before committing. AI can play 'devil's advocate' to reveal weaknesses in your logic or help you articulate why your choices are sound.</p>
-                
-                <h3>Pillar 3: Literature Review System</h3>
-                
-                <p><strong>What It Does:</strong></p>
-                <ul>
-                    <li>Strategic search protocol development</li>
-                    <li>Synthesis across sources (not just summary)</li>
-                    <li>Gap identification and articulation</li>
-                    <li>Argumentative spine creation</li>
-                    <li>Integration across disparate literatures</li>
-                </ul>
-                
-                <p><strong>Tools Used:</strong> Structured prompts, reading logs, synthesis frameworks, Claude for pattern identification</p>
-                
-                <p><strong>Key Principle:</strong> Literature reviews make arguments; they don't just report what others said.</p>
-                
-                <h3>Pillar 4: Qualitative Analysis Support</h3>
-                
-                <p><strong>What It Does:</strong></p>
-                <ul>
-                    <li>Theory-grounded codebook development</li>
-                    <li>Code application protocols</li>
-                    <li>Inductive code development frameworks</li>
-                    <li>Pattern recognition support</li>
-                    <li>Theme identification and refinement</li>
-                </ul>
-                
-                <p><strong>Tools Used:</strong> Custom coding assistant (Claude), iterative codebook, analysis protocols</p>
-                
-                <p><strong>Key Principle:</strong> AI supports your analytical thinking; it doesn't do the analysis for you.</p>
-                
-                <h3>Pillar 5: Project Management & Accountability</h3>
-                
-                <p><strong>What It Does:</strong></p>
-                <ul>
-                    <li>Central dashboard for current status</li>
-                    <li>Weekly check-in structure with reflection</li>
-                    <li>Phase-based timeline with realistic milestones</li>
-                    <li>"Unstuck" strategies for predictable challenges</li>
-                    <li>Progress tracking and celebration</li>
-                </ul>
-                
-                <p><strong>Tools Used:</strong> Dashboard system, check-in protocols, progress tracking tools</p>
-                
-                <p><strong>Key Principle:</strong> Sustainable progress beats perfectionist paralysis.</p>
-                
-                <h2>How the Pillars Connect</h2>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>From</th>
-                            <th>To</th>
-                            <th>Connection</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Literature (P1)</td>
-                            <td>Framework (P2)</td>
-                            <td>Sources inform theoretical choices</td>
-                        </tr>
-                        <tr>
-                            <td>Framework (P2)</td>
-                            <td>Analysis (P4)</td>
-                            <td>Theory shapes coding and interpretation</td>
-                        </tr>
-                        <tr>
-                            <td>Literature (P1)</td>
-                            <td>Lit Review (P3)</td>
-                            <td>Organized sources enable synthesis</td>
-                        </tr>
-                        <tr>
-                            <td>All Pillars</td>
-                            <td>Management (P5)</td>
-                            <td>Dashboard tracks progress across system</td>
-                        </tr>
-                        <tr>
-                            <td>Framework (P2)</td>
-                            <td>Lit Review (P3)</td>
-                            <td>Theoretical lens analyzes literature</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h2>Implementation Sequence</h2>
-                
-                <p>While all pillars are important, implement them in this order for maximum effectiveness:</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Phase</th>
-                            <th>Pillar</th>
-                            <th>Why This Sequence</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Project Management (P5)</td>
-                            <td>Provides tracking structure for everything else</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Reference Management (P1)</td>
-                            <td>Foundation for all literature work</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Theoretical Framework (P2)</td>
-                            <td>Guides how you approach everything</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Literature Review (P3)</td>
-                            <td>Builds on organized sources and clear theory</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Qualitative Analysis (P4)</td>
-                            <td>Requires clear theory and methodology first</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="callout">
-                    <div class="callout-title">FLEXIBILITY NOTE</div>
-                    <p>This sequence is a recommendation, not a requirement. Your specific circumstances might warrant a different order. For example, if you're already collecting data, you might prioritize Pillar 4 (Analysis) earlier.</p>
-                </div>
-                
-                <h2>System Scalability</h2>
-                
-                <p>This system grows with your needs:</p>
-                
-                <h3>Minimal Implementation (2-3 hours setup)</h3>
-                <p><strong>Include only:</strong></p>
-                <ul>
-                    <li>Claude Project with basic custom instructions</li>
-                    <li>Simple Zotero collections (3-4 folders)</li>
-                    <li>Basic dashboard in Word or Excel</li>
-                    <li>Weekly check-in routine</li>
-                </ul>
-                <p>Time investment: 2-3 hours to set up, 30 minutes/week to maintain</p>
-                
-                <h3>Standard Implementation (4-6 hours setup)</h3>
-                <p><strong>Include:</strong></p>
-                <ul>
-                    <li>All five pillars fully implemented</li>
-                    <li>Integrated Zotero + Obsidian workflow</li>
-                    <li>2-3 specialized Claude support threads</li>
-                    <li>Comprehensive tracking systems</li>
-                </ul>
-                <p>Time investment: 4-6 hours to set up, 1 hour/week to maintain</p>
-                
-                <h3>Advanced Implementation (8-10 hours setup)</h3>
-                <p><strong>Add:</strong></p>
-                <ul>
-                    <li>Custom Obsidian plugins and advanced templates</li>
-                    <li>Automated workflows using scripts</li>
-                    <li>Multiple specialized AI support agents for different tasks</li>
-                    <li>Advanced data visualization and progress tracking</li>
-                </ul>
-                <p>Time investment: 8-10 hours to set up, 1-2 hours/week to maintain</p>
-                
-                <p>Start with minimal or standard implementation, then expand as you identify needs.</p>
-                
-                <div class="callout">
-                    <div class="callout-title">READY TO BUILD?</div>
-                    <p>Section 4 (Implementation Guide) provides detailed, step-by-step instructions for building each pillar. Work through it systematically, testing each component before moving to the next.</p>
-                </div>
-                
-            </div>
-        </section>
-        
-        <!-- SECTION 4: IMPLEMENTATION GUIDE -->
-        <section id="section4" class="section">
-            <h1 class="collapsible-header">4. Implementation Guide: Step-by-Step Setup</h1>
-            <div class="collapsible-content">
-                
-                <p>This section provides detailed instructions for building each component of your system. Work through phases systematically, testing each before moving forward.</p>
-                
-                <div class="callout">
-                    <div class="callout-title">IMPLEMENTATION APPROACH</div>
-                    <p>Don't try to build everything at once. Implement one phase per day or week, depending on your schedule. Each phase builds on previous work, so sequence matters.</p>
-                    <p style="margin-top: 10px;"><strong>Estimated total time:</strong> 4-6 hours spread across several days</p>
-                </div>
-                
-                <h2 id="impl-phase1">Phase 1: Create Your Claude Project (30-45 minutes)</h2>
-                
-                <h3>Step 1.1: Initial Project Setup</h3>
-                
-                <ol>
-                    <li>Navigate to claude.ai and log in</li>
-                    <li>Click 'Projects' in the left sidebar</li>
-                    <li>Click '+ New Project' button</li>
-                    <li>Name your project: 'Dissertation Development - [Your Topic]'</li>
-                    <li>Click 'Create Project'</li>
-                </ol>
-                
-                <h3>Step 1.2: Write Custom Instructions</h3>
-                
-                <p>Custom instructions tell Claude how to behave in this project. Copy and adapt this template:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CUSTOM INSTRUCTIONS TEMPLATE</div>
-                    <div class="prompt-content">You are an expert research consultant helping with doctoral dissertation development in [your field].
-
-RESEARCH CONTEXT:
-- Research Question: [Insert your RQ]
-- Theoretical Framework: [Primary theories]
-- Methodology: [Your approach]
-- Population: [Who you're studying]
-
-YOUR ROLE:
-- Help maintain consistency across all research documents
-- Provide methodologically sound guidance aligned with [your paradigm]
-- Strengthen theoretical coherence and argumentation
-- Anticipate committee questions and develop defensive responses
-- Support literature synthesis and conceptual development
-
-CRITICAL BOUNDARIES:
-- Never write complete dissertation sections
-- Always explain reasoning behind suggestions
-- Flag when original scholarship is required
-- Maintain researcher's authority over all decisions
-- Respect epistemological commitments of [your approach]
-
-INTERACTION STYLE:
-- Ask clarifying questions before making recommendations
-- Provide specific examples grounded in research context
-- Offer multiple options when appropriate
-- Challenge assumptions productively
-- Celebrate progress while identifying next steps</div>
-                    <div class="prompt-instruction">[Customize the bracketed sections for your specific context]</div>
-                </div>
-                
-                <h3>Step 1.3: Upload Foundation Documents</h3>
-                
-                <p>Upload documents in this sequence for optimal AI understanding:</p>
-                
-                <p><strong>FIRST: Core conceptual documents</strong></p>
-                <ul>
-                    <li>Problem statement or research background</li>
-                    <li>Research question and purpose statement</li>
-                    <li>IRB application or methodology overview</li>
-                </ul>
-                
-                <p><strong>SECOND: Research design documents</strong></p>
-                <ul>
-                    <li>Interview protocols or data collection instruments</li>
-                    <li>Sampling strategy</li>
-                    <li>Analysis plan overview</li>
-                </ul>
-                
-                <p><strong>THIRD: Theoretical materials</strong></p>
-                <ul>
-                    <li>Theoretical framework drafts</li>
-                    <li>Key literature notes or syntheses</li>
-                    <li>Epistemological positioning statements</li>
-                </ul>
-                
-                <p><strong>FOURTH: Administrative tracking</strong></p>
-                <ul>
-                    <li>Timeline or project plan</li>
-                    <li>Advisor feedback documents</li>
-                    <li>Committee requirements or milestones</li>
-                </ul>
-                
-                <div class="callout">
-                    <div class="callout-title">PRO TIP: File Naming</div>
-                    <p>Use clear, descriptive filenames with version dates:</p>
-                    <p style="margin-top: 10px;"><strong>Good:</strong> 01_ResearchQuestion_Final_2025-01-15.docx<br>
-                    <strong>Good:</strong> 02_TheoreticalFramework_Draft3_2025-02-20.docx</p>
-                    <p style="margin-top: 10px;"><strong>Bad:</strong> dissertation stuff.docx<br>
-                    <strong>Bad:</strong> version 2.docx</p>
-                </div>
-                
-                <h3>Step 1.4: Test Your Setup</h3>
-                
-                <p>Run these three verification prompts:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">TEST 1: CONTEXT VERIFICATION</div>
-                    <div class="prompt-content">List all documents you have access to and briefly describe what each contains. Are there any gaps in your understanding of my research?</div>
-                </div>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">TEST 2: THEORETICAL ALIGNMENT</div>
-                    <div class="prompt-content">Based on my research question and theoretical framework, what are the key commitments I need to maintain throughout this study? What tensions might I need to navigate?</div>
-                </div>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">TEST 3: PRACTICAL OUTPUT</div>
-                    <div class="prompt-content">Create a one-page synthesis of my research project that I could use to explain my study to a new committee member. Include research question, theoretical framework, methodology, and contribution.</div>
-                </div>
-                
-                <p>If responses are specific, accurate, and demonstrate understanding of your unique context, you're ready to proceed.</p>
-                
-                <h2 id="impl-phase2">Phase 2: Build Your Reference Management System (60-90 minutes)</h2>
-                
-                <h3>Step 2.1: Set Up Zotero Organization</h3>
-                
-                <p>Create this collection structure:</p>
-                
-                <div class="code-block">
-                    <code>My Library (everything lives here)
-│
-├── Archive - Previous Work (preserve old organization)
-│
-└── Dissertation - [Project Name] (new workspace)
-    ├── 1. Core Theory & Framework
-    ├── 2. Population & Context
-    ├── 3. [Your Phenomenon/Intervention]
-    ├── 4. Methodology & Methods
-    ├── 5. Emergent Themes (for later)
-    └── 6. Supplementary & Background</code>
-                </div>
-                
-                <p><strong>Design principles:</strong></p>
-                <ul>
-                    <li>Top-level dissertation folder stays EMPTY (it's a container)</li>
-                    <li>Sources live in subcollections</li>
-                    <li>Items can appear in multiple collections (they're references, not moves)</li>
-                    <li>Structure mirrors your dissertation chapter organization</li>
-                </ul>
-                
-                <h3>Step 2.2: Develop Your Tagging System</h3>
-                
-                <p>Create multi-dimensional tags:</p>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tag Category</th>
-                            <th>Example Tags</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>By Chapter Use</td>
-                            <td>#Ch1-Introduction, #Ch2-LitReview, #Ch3-Methodology, #Ch4-Findings, #Ch5-Discussion</td>
-                        </tr>
-                        <tr>
-                            <td>By Priority</td>
-                            <td>#MustRead, #ShouldRead, #Optional, #Read</td>
-                        </tr>
-                        <tr>
-                            <td>By Function</td>
-                            <td>#Framework, #Background, #Methods, #Empirical</td>
-                        </tr>
-                        <tr>
-                            <td>By Theme</td>
-                            <td>(Add as themes emerge from data)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h3>Step 2.3: Create Annotation Template</h3>
-                
-                <p>Set up this structure in Zotero notes or prepare for Obsidian:</p>
-                
-                <div class="code-block">
-                    <code>CITATION: [Full formatted citation]
-
-CORE ARGUMENT (1-3 sentences):
-[Main claim in YOUR words]
-
-KEY CONCEPTS & DEFINITIONS:
-- [Concept 1]: [Definition]
-- [Concept 2]: [Definition]
-
-RELEVANT FINDINGS/CLAIMS:
-[Bullet points of what matters for YOUR study]
-
-IMPORTANT QUOTES (with page numbers):
-"[Quote]" (p. XX)
-
-CONNECTION TO MY STUDY:
-[How this source informs your work]
-[Specific uses in dissertation]
-
-QUESTIONS THIS RAISES:
-[Ideas for further exploration]
-[Connections to other sources]
-
-DISSERTATION SECTIONS:
-- Chapter X, Section Y: [How it will be used]
-
-METADATA:
-Read Date: [MM/DD/YYYY]
-Status: [Not Started / In Progress / Complete]
-Priority: [Must / Should / Optional]</code>
-                </div>
-                
-                <h3>Step 2.4: Migrate Your Core Sources</h3>
-                
-                <ol>
-                    <li>Identify 15-20 essential sources for your project</li>
-                    <li>Move them into appropriate Zotero collections</li>
-                    <li>Apply initial tags</li>
-                    <li>Create at least 3 complete literature notes using your template</li>
-                    <li>Note missing sources in a tracking document</li>
-                </ol>
-                
-                <h2 id="impl-phase3">Phase 3: Build Your Obsidian Knowledge Workspace (60-90 minutes)</h2>
-                
-                <h3>Step 3.1: Create Your Vault Structure</h3>
-                
-                <p>Set up these folders:</p>
-                
-                <div class="code-block">
-                    <code>00 - Inbox (quick captures, unsorted)
-01 - Literature Notes (one per source)
-02 - Concept Notes (synthesis across sources)
-03 - Framework Development (theory building)
-04 - Data & Analysis (for later phases)
-05 - Writing Drafts (chapter outlines & drafts)
-06 - Advisor Meetings (prep & follow-up)
-07 - Project Management (tracking & planning)</code>
-                </div>
-                
-                <p><strong>Why this structure:</strong></p>
-                <ul>
-                    <li>Numbers enforce sorting order</li>
-                    <li>Progressive flow: input → processing → output</li>
-                    <li>Separation of reference (01) from synthesis (02)</li>
-                    <li>Dedicated spaces for key relationships (06)</li>
-                </ul>
-                
-                <h3>Step 3.2: Build Your Central Dashboard</h3>
-                
-                <p>Create Dashboard.md at the vault root with this structure:</p>
-                
-                <div class="code-block">
-                    <code># Dissertation Dashboard - [Your Name]
-
-## CURRENT PHASE
-[Where you are: Proposal / IRB / Data Collection / Analysis / Writing]
-
-Target completion: [Date]
-Days remaining: [Number]
-
-## THIS WEEK'S FOCUS
-- [ ] [Specific task 1]
-- [ ] [Specific task 2]
-- [ ] [Specific task 3]
-
-## RECENT WINS
-- [Achievement 1] - [Date]
-- [Achievement 2] - [Date]
-
-## CURRENT CHALLENGES
-- [Challenge 1]
-- [Challenge 2]
-
-## PROGRESS METRICS
-- Literature notes completed: XX / YY
-- Interviews conducted: XX / YY
-- Chapters drafted: XX / 5
-- Advisor meetings: Next on [Date]
-
-## QUICK LINKS
-- [[Reading Log]]
-- [[Theoretical Framework]]
-- [[Codebook]]
-- [[Timeline]]
-
-## NEXT STEPS (1-2 weeks)
-1. [Next action 1]
-2. [Next action 2]
-3. [Next action 3]
-
----
-Last updated: [Date]</code>
-                </div>
-                
-                <h3>Step 3.3: Set Up Your Reading Log</h3>
-                
-                <p>Create 07 - Project Management/Reading Log.md:</p>
-                
-                <div class="code-block">
-                    <code># Reading Log
-
-## Current Month - [Month Year]
-
-### Week [N] ([Date Range])
-Focus: [What you're reading for this week]
-
-| Source | Status | Started | Completed | Notes |
-|--------|--------|---------|-----------|-------|
-| Author (Year) | Scheduled | MM/DD | - | [[Link]] |
-| Author (Year) | In Progress | MM/DD | - | [[Link]] |
-| Author (Year) | Complete | MM/DD | MM/DD | [[Link]] |
-
-Weekly Reflection:
-[What am I learning?]
-[What connections am I seeing?]
-
-Questions Emerging:
-[Track developing inquiry]</code>
-                </div>
-                
-                <h3>Step 3.4: Install Zotero Integration Plugin</h3>
-                
-                <ol>
-                    <li>In Obsidian: Settings → Community Plugins</li>
-                    <li>Disable 'Restricted Mode' if needed</li>
-                    <li>Click 'Browse' and search 'Zotero Integration'</li>
-                    <li>Install plugin by mgmeyers</li>
-                    <li>Enable the plugin</li>
-                    <li>Test connection: Open Zotero desktop app, then in Obsidian use Command Palette (Ctrl/Cmd+P) → 'Zotero Integration: Import Notes'</li>
-                    <li>Try importing one source to verify connection</li>
-                </ol>
-                
-                <div class="callout">
-                    <div class="callout-title">TROUBLESHOOTING</div>
-                    <p>If connection fails:</p>
-                    <ol style="margin: 10px 0 0 0;">
-                        <li>Restart both Zotero and Obsidian</li>
-                        <li>Remove unused Zotero add-ons that might conflict</li>
-                        <li>Check that Zotero is running before testing Obsidian connection</li>
-                        <li>Update both applications to latest versions</li>
-                    </ol>
-                </div>
-                
-                <h2>Phase 4: Theoretical Framework Development (90-120 minutes)</h2>
-                
-                <p>This phase uses Claude as a strategic consultant for framework development.</p>
-                
-                <h3>Step 4.1: Initial Theoretical Exploration</h3>
-                
-                <p>Start with this diagnostic prompt:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">THEORETICAL EXPLORATION PROMPT</div>
-                    <div class="prompt-content">I'm working on my theoretical framework and need your help testing my thinking. Here's my current situation:
-
-RESEARCH QUESTION: [Your RQ]
-
-THEORIES I'M CONSIDERING:
-1. [Theory A] - because [reason]
-2. [Theory B] - because [reason]
-
-WHAT DRAWS ME TO THESE:
-[Honest answer about why these appeal to you]
-
-WHAT I HOPE TO FIND:
-[What results would excite you most]
-
-HOW I'LL USE FINDINGS:
-[Practical application or contribution]
-
-MY UNCERTAINTY:
-[What you're unsure about]
-
-Please help me:
-1. Test whether these theories authentically fit my goals
-2. Identify any misalignments between my values and these choices
-3. Suggest what questions I should ask myself before committing</div>
-                </div>
-                
-                <h3>Step 4.2: Integration Logic Development</h3>
-                
-                <p>Once you've clarified theoretical choices, work on integration:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">INTEGRATION LOGIC PROMPT</div>
-                    <div class="prompt-content">I've decided to use [Theory A] as my primary framework and [Theory B] as a complementary lens. Help me develop the integration logic:
-
-1. What does Theory A provide that Theory B doesn't?
-2. How does Theory B complement rather than contradict Theory A?
-3. What's my explicit rationale for using both?
-4. Where might tensions arise, and how will I handle them?
-5. How do these theories connect to my specific research question?
-
-Create a 2-3 paragraph theoretical framework statement I can use in my proposal that explains this integration clearly.</div>
-                </div>
-                
-                <h3>Step 4.3: Defensive Argument Preparation</h3>
-                
-                <p>Anticipate challenges:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">DEFENSE PREPARATION PROMPT</div>
-                    <div class="prompt-content">I'm using [your framework] for [your study]. Help me prepare for these likely committee questions:
-
-1. "Why not use [Alternative Theory] instead?"
-2. "How do you reconcile [potential tension in your framework]?"
-3. "What about [limitation of your chosen theories]?"
-4. "How do you justify combining [Theory A] and [Theory B]?"
-
-For each question, help me develop:
-- A clear, confident response
-- Evidence or reasoning supporting my choice
-- Acknowledgment of limitations while defending the decision</div>
-                </div>
-                
-                <h3>Step 4.4: Theory-to-Methods Mapping</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">THEORY-METHODS ALIGNMENT PROMPT</div>
-                    <div class="prompt-content">My theoretical framework is [description]. My methods are [description].
-
-Help me create a clear map showing:
-1. How my theoretical constructs connect to my interview questions
-2. How my framework shapes my coding approach
-3. What my theory commits me to methodologically
-4. Where my approach aligns with or departs from how these theories are typically operationalized
-
-Identify any misalignments I need to address.</div>
-                </div>
-                
-                <h2>Phase 5: Literature Review System (60-90 minutes)</h2>
-                
-                <h3>Step 5.1: Strategic Search Protocol</h3>
-                
-                <p>Work with Claude to develop targeted searches:</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">LITERATURE SEARCH STRATEGY PROMPT</div>
-                    <div class="prompt-content">Based on my research question [RQ] and theoretical framework [Framework], help me identify:
-
-1. What literature bodies are ESSENTIAL (can't proceed without)
-2. What literatures are IMPORTANT (strengthen argument/context)
-3. What literatures are SUPPLEMENTARY (nice to have)
-
-For each essential literature body:
-- Specific search terms and combinations
-- Key databases to prioritize
-- Seminal vs. recent work balance
-- Approximately how many sources I need
-
-Create a prioritized reading plan for the next 8-12 weeks.</div>
-                </div>
-                
-                <h3>Step 5.2: Synthesis Framework Development</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">LITERATURE SYNTHESIS SUPPORT PROMPT</div>
-                    <div class="prompt-content">I need to synthesize literature on [topic] for my literature review. Instead of just summarizing what each author said, help me:
-
-1. Identify the major scholarly 'conversations' in this literature
-2. Show how scholars respond to or build on each other
-3. Use my theoretical framework as an analytical lens
-4. Identify what's missing or underexplored
-5. Position my study within these conversations
-
-Provide:
-- A template for synthesizing 3-5 sources on a theme
-- Example paragraphs showing synthesis vs. summary
-- Transition language for connecting literature bodies</div>
-                </div>
-                
-                <h3>Step 5.3: Argumentative Spine Creation</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">LITERATURE REVIEW ARGUMENT PROMPT</div>
-                    <div class="prompt-content">My literature review can't just be organized by topics—it needs to make an argument. Based on my research question and study design, help me:
-
-1. Identify the core claim my literature review should make
-2. Develop a structure where each section builds toward that claim
-3. Create an 'argument map' showing how sections interconnect
-4. Write transitional language that shows relationships, not just sequence
-
-What's the narrative arc from 'here's the problem' to 'here's why my study matters'?</div>
-                </div>
-                
-                <h2>Phase 6: Qualitative Coding Support (45-60 minutes)</h2>
-                
-                <h3>Step 6.1: Initial Codebook Development</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODEBOOK DEVELOPMENT PROMPT</div>
-                    <div class="prompt-content">I'm developing a codebook for qualitative analysis of [data type] using [methodology]. My theoretical framework is [framework].
-
-Help me create:
-1. Deductive codes derived from my theoretical framework
-2. Clear definitions for each code with inclusion/exclusion criteria
-3. Example quotes or scenarios for each code
-4. A structure for inductive codes that will emerge from data
-5. Guidelines for when to apply multiple codes to one segment
-
-My codes should reflect [theoretical constructs] while remaining open to emergent patterns.</div>
-                </div>
-                
-                <h3>Step 6.2: Coding Decision Protocols</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODING PROTOCOLS PROMPT</div>
-                    <div class="prompt-content">As I code interviews, I'll encounter ambiguities. Help me establish protocols for:
-
-1. When a segment could fit multiple codes (how to decide?)
-2. When data doesn't fit existing codes (threshold for new code?)
-3. How much inference is appropriate (participant-explicit vs. researcher-inferred)
-4. What constitutes a 'coding unit' (sentence, paragraph, meaning unit?)
-5. How to maintain consistency across multiple transcripts
-
-Create a decision-making flowchart I can reference while coding.</div>
-                </div>
-                
-                <h2>Phase 7: Ongoing Support Workflows (30 minutes)</h2>
-                
-                <h3>Create Specialized Support Prompts</h3>
-                
-                <p>For different work phases, create separate Claude chats with rich initial prompts:</p>
-                
-                <h4>Coding Support Chat</h4>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODING SUPPORT CHAT INITIALIZATION</div>
-                    <div class="prompt-content">I'm [Your Name], conducting [Research Type] on [Topic] at [Institution].
-
-RESEARCH QUESTION: [RQ]
-THEORETICAL FRAMEWORK: [Framework]
-METHODOLOGY: [Approach]
-DATA: [Type, number of interviews/observations]
-
-I need ongoing support with qualitative coding decisions. I'll bring you:
-- De-identified transcript excerpts
-- Specific coding dilemmas
-- Questions about code definitions or boundaries
-- Patterns I'm noticing that might warrant new codes
-
-For each dilemma, help me:
-- Apply my theoretical framework consistently
-- Maintain methodological rigor
-- Develop clear code definitions with examples
-- Track patterns across transcripts
-
-Current codebook: [attach or paste]</div>
-                </div>
-                
-                <h4>Literature Synthesis Chat</h4>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">LITERATURE SYNTHESIS CHAT INITIALIZATION</div>
-                    <div class="prompt-content">I'm synthesizing literature for my dissertation on [Topic] using [Theories].
-
-RESEARCH QUESTION: [RQ]
-CURRENT PHASE: Literature review development
-
-I need help synthesizing across sources, identifying gaps, and building arguments. I'll provide:
-- Clusters of related sources to synthesize
-- Conflicting findings to reconcile
-- Gaps I'm identifying that need articulation
-
-Help me write synthesis paragraphs that show scholarly conversations, not just summaries.</div>
-                </div>
-                
-                <h4>Advisor Meeting Prep Chat</h4>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">ADVISOR MEETING PREP CHAT INITIALIZATION</div>
-                    <div class="prompt-content">I meet with my advisor [frequency] and need help preparing productive meetings. For each meeting, help me:
-- Synthesize progress since last meeting
-- Frame questions/challenges clearly
-- Anticipate advisor's likely concerns
-- Prepare materials/documents to share
-- Identify decisions needed from advisor
-
-After meetings, help me process feedback and create action plans.</div>
-                </div>
-                
-                <div class="callout">
-                    <div class="callout-title">IMPLEMENTATION COMPLETE</div>
-                    <p>Congratulations! You've now built the core infrastructure of your AI-assisted dissertation management system. The next section (Advanced Workflows) shows you how to use this system effectively for ongoing dissertation work.</p>
-                </div>
-                
-            </div>
-        </section>
-        <!-- SECTION 5: ADVANCED WORKFLOWS -->
-        <section id="section5" class="section">
-            <h1 class="collapsible-header">5. Advanced Workflows: Maximizing Your System</h1>
-            <div class="collapsible-content">
-                
-                <p>Now that your system is built, these workflows show you how to use it effectively for common dissertation tasks.</p>
-                
-                <h2 id="workflow-lit">Workflow 1: Literature Review Development</h2>
-                
-                <p>This workflow guides you through systematic literature review development over 12 weeks.</p>
-                
-                <h3>Week 1-4: Core Theory Phase</h3>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Activity</th>
-                            <th>Claude Prompt</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday</td>
-                            <td>Upload 2-3 theory sources to Zotero</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday-Thursday</td>
-                            <td>Create literature notes in Obsidian</td>
-                            <td>—</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>Synthesis session with Claude</td>
-                            <td>"Help me synthesize..."</td>
-                        </tr>
-                        <tr>
-                            <td>Weekend</td>
-                            <td>Draft 1-2 pages in Chapter 2</td>
-                            <td>—</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h3>Week 5-8: Population/Context Phase</h3>
-                <p>Repeat the reading cycle with context-specific literature. Weekly Claude synthesis focuses on:</p>
-                <ul>
-                    <li>How context shapes your phenomenon</li>
-                    <li>Population-specific considerations</li>
-                    <li>Connections to theoretical framework</li>
-                </ul>
-                
-                <h3>Week 9-12: Phenomenon/Intervention Phase</h3>
-                <p>Read empirical studies, track patterns in Concept Notes. Claude support for:</p>
-                <ul>
-                    <li>Cross-study synthesis</li>
-                    <li>Gap identification</li>
-                    <li>Your study's positioning</li>
-                </ul>
-                
-                <h2>Workflow 2: Theoretical Framework Refinement</h2>
-                
-                <p>Iterative development cycle for framework refinement:</p>
-                
-                <h3>Round 1: Initial Draft (Week 1)</h3>
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">FRAMEWORK DRAFT REQUEST</div>
-                    <div class="prompt-content">Help me draft my theoretical framework section. I need:
-- Clear explanation of [Theory A]
-- Explanation of [Theory B]
-- Integration logic showing how they work together
-- Connection to my research question
-- 3-4 pages total
-
-Based on: [upload current understanding documents]</div>
-                </div>
-                
-                <h3>Round 2: Advisor Feedback (Week 2)</h3>
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">FEEDBACK INCORPORATION REQUEST</div>
-                    <div class="prompt-content">My advisor said: "[paste feedback]"
-
-Help me:
-- Understand what they're really asking for
-- Revise specific sections to address concerns
-- Strengthen areas they flagged as weak</div>
-                </div>
-                
-                <h2 id="workflow-coding">Workflow 3: Coding and Analysis Support</h2>
-                
-                <h3>Initial Coding Phase (First 3 Interviews)</h3>
-                
-                <p>For each interview:</p>
-                <ol>
-                    <li>Code using your codebook</li>
-                    <li>Track uncertainties in separate document</li>
-                    <li>End-of-interview Claude consultation (see prompt below)</li>
-                    <li>Update codebook based on insights</li>
-                </ol>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODING DILEMMA CONSULTATION</div>
-                    <div class="prompt-content">I just coded Interview [N]. Here are my coding dilemmas:
-
-EXCERPT 1: "[de-identified quote]"
-- I applied [Code A] because [reason]
-- I considered [Code B] because [reason]
-- How do I decide?
-
-NEW PATTERN: I'm seeing [description] across multiple participants.
-- Does this warrant a new code?
-- How should I define it?
-- What would I name it?</div>
-                </div>
-                
-                <h3>Codebook Refinement (After Interviews 3, 6, 9, etc.)</h3>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODEBOOK REFINEMENT REQUEST</div>
-                    <div class="prompt-content">I've now coded [N] interviews. Help me:
-- Review code definitions for clarity
-- Identify overlapping codes that should be merged
-- Develop new codes for emergent patterns
-- Ensure theoretical alignment
-- Create examples for each code
-
-Current codebook: [upload or paste]
-Patterns I'm noticing: [describe]</div>
-                </div>
-                
-                <div class="callout">
-                    <div class="callout-title">WORKFLOW CUSTOMIZATION</div>
-                    <p>These workflows are templates. Adapt them to your:</p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li>Research methodology and approach</li>
-                        <li>Advisor's meeting style and expectations</li>
-                        <li>Personal working patterns and constraints</li>
-                        <li>Institutional requirements and deadlines</li>
-                    </ul>
-                    <p style="margin-top: 10px;">The goal is consistent, structured support—not rigid adherence to a formula.</p>
-                </div>
-                
-            </div>
-        </section>
-        
-        <!-- SECTION 6: QUALITY CONTROL & ETHICS -->
-        <section id="section6" class="section">
-            <h1 class="collapsible-header">6. Quality Control & Ethics</h1>
-            <div class="collapsible-content">
-                
-                <p>Maintaining academic integrity while using AI assistance requires clear boundaries, verification protocols, and transparent documentation.</p>
-                
-                <h2 id="qc-integrity">Maintaining Academic Integrity</h2>
-                
-                <h3>What AI Does in Your System</h3>
-                
-                <p><strong>APPROPRIATE AI USES:</strong></p>
-                <ul>
-                    <li>Provides structural frameworks and organizational schemes</li>
-                    <li>Offers synthesis strategies and analytical approaches</li>
-                    <li>Generates example prompts and templates</li>
-                    <li>Asks clarifying questions to refine your thinking</li>
-                    <li>Identifies gaps in reasoning or argumentation</li>
-                    <li>Suggests connections between concepts or sources</li>
-                </ul>
-                
-                <h3>What AI Does NOT Do</h3>
-                
-                <p><strong>INAPPROPRIATE AI USES:</strong></p>
-                <ul>
-                    <li>Write your dissertation sections or chapters</li>
-                    <li>Analyze your actual research data</li>
-                    <li>Make methodological decisions for you</li>
-                    <li>Conduct literature reviews on your behalf</li>
-                    <li>Interpret your research findings</li>
-                    <li>Replace your scholarly judgment</li>
-                </ul>
-                
-                <div class="callout" style="border-left-color: #000;">
-                    <div class="callout-title">THE LINE: Consultation vs. Creation</div>
-                    <p>AI should help you think more clearly about your work, not think for you. If you can't explain a concept, decision, or argument without referencing the AI conversation, you've crossed the line from consultation into dependence.</p>
-                </div>
-                
-                <h2 id="qc-verification">Verification Protocols</h2>
-                
-                <p>Use these checklists to ensure your work maintains scholarly integrity:</p>
-                
-                <h3>For Theoretical Framework</h3>
-                
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify1"><label for="verify1">Can you explain the framework in your own words without referencing AI conversations?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify2"><label for="verify2">Have you verified theoretical claims against original sources?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify3"><label for="verify3">Has your advisor reviewed and approved the framework?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify4"><label for="verify4">Can you defend every theoretical choice with scholarly reasoning?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify5"><label for="verify5">Did you independently read the primary theoretical texts?</label>
-                </div>
-                
-                <h3>For Literature Review</h3>
-                
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify6"><label for="verify6">Have you personally read every source you cite?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify7"><label for="verify7">Are all claims verified against original texts?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify8"><label for="verify8">Is the synthesis YOUR interpretation, not AI's?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify9"><label for="verify9">Can you articulate the argument your review makes?</label>
-                </div>
-                
-                <h3>For Coding/Analysis</h3>
-                
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify10"><label for="verify10">Did you make all final coding decisions yourself?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify11"><label for="verify11">Can you justify every code application?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify12"><label for="verify12">Is the interpretation grounded in YOUR engagement with data?</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="verify13"><label for="verify13">Have you maintained an audit trail of analytical decisions?</label>
-                </div>
-                
-                <h2>Transparency & Documentation</h2>
-                
-                <p>Keep a methodological memo throughout your dissertation process that includes:</p>
-                
-                <ul>
-                    <li>How you used AI in different phases</li>
-                    <li>What types of support you requested</li>
-                    <li>Major decisions informed by AI dialogue</li>
-                    <li>How you verified or modified AI suggestions</li>
-                    <li>Ethical guidelines you followed</li>
-                </ul>
-                
-                <h3>How to Disclose in Your Dissertation</h3>
-                
-                <p><strong>SAMPLE LANGUAGE FOR METHODOLOGY CHAPTER:</strong></p>
-                
-                <div class="code-block">
-                    <code>During dissertation development, I used Claude (an AI assistant by Anthropic) as a methodological consultant to strengthen theoretical coherence, identify gaps in reasoning, and develop organizational frameworks. All analytical decisions, interpretations, and scholarly arguments remain my own original work, verified through engagement with primary sources and advisor guidance.</code>
-                </div>
-                
-                <p><strong>SAMPLE LANGUAGE FOR ACKNOWLEDGMENTS:</strong></p>
-                
-                <div class="code-block">
-                    <code>I used AI tools to support the structural and organizational development of this dissertation while maintaining full responsibility for all scholarly content, analysis, and interpretation.</code>
-                </div>
-                
-                <h2>Ethical Boundaries</h2>
-                
-                <h3>Always Acceptable</h3>
-                <ul>
-                    <li>Using AI to understand complex theoretical concepts</li>
-                    <li>Requesting organizational frameworks and structural templates</li>
-                    <li>Generating multiple options for approaching methodological challenges</li>
-                    <li>Developing defensive arguments for theoretical or methodological choices</li>
-                    <li>Creating tracking systems and project management tools</li>
-                    <li>Brainstorming approaches to research problems</li>
-                </ul>
-                
-                <h3>Requires Extreme Caution</h3>
-                <ul>
-                    <li>Sharing de-identified data excerpts (check IRB requirements first)</li>
-                    <li>Requesting help with ambiguous coding decisions (you must make final call)</li>
-                    <li>Using AI to identify potential patterns (you must verify in data)</li>
-                    <li>Getting feedback on draft writing (verify all content independently)</li>
-                </ul>
-                
-                <h3>Never Acceptable</h3>
-                <ul>
-                    <li>Sharing identifiable participant data with AI</li>
-                    <li>Having AI code your entire dataset without your oversight</li>
-                    <li>Copying AI-generated text directly into your dissertation</li>
-                    <li>Using AI to write findings or discussion sections</li>
-                    <li>Claiming AI suggestions as your own original scholarly ideas</li>
-                    <li>Bypassing required scholarly work through AI shortcuts</li>
-                </ul>
-                
-                <div class="callout" style="border-left-color: #000;">
-                    <div class="callout-title">RED FLAGS: When to Stop Using AI</div>
-                    <p>Stop and reassess if you find yourself:</p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li>Unable to explain concepts without referencing AI conversations</li>
-                        <li>Avoiding your advisor because 'AI already helped'</li>
-                        <li>Feeling guilty or secretive about your AI use</li>
-                        <li>Relying on AI validation before trusting your own thinking</li>
-                        <li>Copying text because 'AI said it better than I could'</li>
-                    </ul>
-                    <p style="margin-top: 10px;">These are signs of over-reliance. Return to independent work and human mentorship.</p>
-                </div>
-                
-            </div>
-        </section>
-        
-        <!-- SECTION 7: TROUBLESHOOTING -->
-        <section id="section7" class="section">
-            <h1 class="collapsible-header">7. Troubleshooting & Adaptation</h1>
-            <div class="collapsible-content">
-                
-                <p>Common challenges, solutions, and strategies for adapting this system to different contexts.</p>
-                
-                <h2 id="trouble-problems">Common Problems & Solutions</h2>
-                
-                <h3>Problem 1: AI Responses Too Generic</h3>
-                
-                <p><strong>SYMPTOMS:</strong></p>
-                <ul>
-                    <li>Advice could apply to any dissertation</li>
-                    <li>Missing your specific research context</li>
-                    <li>Recommendations don't fit your methodology</li>
-                    <li>Suggestions ignore your theoretical framework</li>
-                </ul>
-                
-                <p><strong>SOLUTIONS:</strong></p>
-                <ol>
-                    <li>Add more context to your custom instructions in Project Settings</li>
-                    <li>Upload additional project-specific documents</li>
-                    <li>Start prompts with 'Given my specific focus on [X]...'</li>
-                    <li>Provide concrete examples from your actual work</li>
-                    <li>Push back explicitly: 'This is too general. Here's my specific situation...'</li>
-                </ol>
-                
-                <h3>Problem 2: System Feels Overwhelming</h3>
-                
-                <p><strong>SYMPTOMS:</strong></p>
-                <ul>
-                    <li>Not opening system for days at a time</li>
-                    <li>Creating notes elsewhere instead of in system</li>
-                    <li>System doesn't match actual workflow</li>
-                    <li>Too many tools to manage simultaneously</li>
-                </ul>
-                
-                <p><strong>SOLUTIONS:</strong></p>
-                <ol>
-                    <li>SIMPLIFY: Choose 2-3 core components only</li>
-                    <li>Start with just the Dashboard and one other tool</li>
-                    <li>Add complexity gradually as needed, not all at once</li>
-                    <li>Identify what you're NOT using and remove it</li>
-                    <li>Focus on what actually helps; ignore 'shoulds'</li>
-                </ol>
-                
-                <h3>Problem 3: Over-Reliance on AI</h3>
-                
-                <p><strong>SYMPTOMS:</strong></p>
-                <ul>
-                    <li>Seeking AI input before thinking independently</li>
-                    <li>Avoiding advisor because 'AI already helped'</li>
-                    <li>Confidence only when AI validates your thinking</li>
-                    <li>Can't work productively without AI access</li>
-                </ul>
-                
-                <p><strong>SOLUTIONS:</strong></p>
-                <ol>
-                    <li>Implement 'think first, consult second' rule</li>
-                    <li>Schedule regular advisor meetings regardless of AI use</li>
-                    <li>Practice explaining work without referencing AI</li>
-                    <li>Take occasional 'AI-free' work days</li>
-                    <li>Remember: AI augments, doesn't replace, expertise</li>
-                </ol>
-                
-                <div class="callout">
-                    <div class="callout-title">RESET PROTOCOL</div>
-                    <p>If you've fallen into over-reliance:</p>
-                    <ul style="margin: 10px 0 0 0;">
-                        <li><strong>Week 1:</strong> Complete one full work session without AI</li>
-                        <li><strong>Week 2:</strong> Use AI only for verification, not generation</li>
-                        <li><strong>Week 3:</strong> Return to balanced use with heightened awareness</li>
-                        <li><strong>Week 4:</strong> Reassess your relationship with AI tools</li>
-                    </ul>
-                </div>
-                
-                <h2 id="trouble-adapt">Adapting for Different Research Types</h2>
-                
-                <h3>For Quantitative Dissertations</h3>
-                <p><strong>ADJUST FOCUS:</strong> Less on coding support, more on analysis plan development, framework for results interpretation, structure for reporting statistical findings</p>
-                
-                <h3>For Mixed Methods Dissertations</h3>
-                <p><strong>ADJUST FOCUS:</strong> Integration strategy development across strands, parallel workflow management, strand coordination and timing, meta-inference frameworks</p>
-                
-                <h3>For Theoretical/Philosophical Dissertations</h3>
-                <p><strong>ADJUST FOCUS:</strong> Argument development and logical structure, conceptual analysis frameworks, philosophical positioning and defense</p>
-                
-                <h3>For Practice-Based/Applied Dissertations</h3>
-                <p><strong>ADJUST FOCUS:</strong> Theory-practice integration, actionable recommendations development, stakeholder consideration, implementation planning</p>
-                
-                <h2>System Maintenance Schedule</h2>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Frequency</th>
-                            <th>Task</th>
-                            <th>Purpose</th>
-                            <th>Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Weekly</td>
-                            <td>Update Reading Log and Dashboard</td>
-                            <td>Review progress, adjust goals</td>
-                            <td>15 min</td>
-                        </tr>
-                        <tr>
-                            <td>Weekly</td>
-                            <td>Process new sources</td>
-                            <td>Create literature notes</td>
-                            <td>45-60 min</td>
-                        </tr>
-                        <tr>
-                            <td>Bi-weekly</td>
-                            <td>Check-in with Claude</td>
-                            <td>Review progress, identify challenges</td>
-                            <td>20 min</td>
-                        </tr>
-                        <tr>
-                            <td>Monthly</td>
-                            <td>Review system effectiveness</td>
-                            <td>Identify unused components</td>
-                            <td>30 min</td>
-                        </tr>
-                        <tr>
-                            <td>Quarterly</td>
-                            <td>System audit</td>
-                            <td>Major adjustments if needed</td>
-                            <td>60 min</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="callout">
-                    <div class="callout-title">REBUILDING ISN'T FAILURE</div>
-                    <p>Your needs change as your dissertation evolves. A system that worked during proposal development may not serve you during data analysis. Rebuilding demonstrates responsiveness to your actual needs, not poor planning.</p>
-                </div>
-                
-            </div>
-        </section>
-        
-        <!-- SECTION 8: TEMPLATES -->
-        <section id="section8" class="section">
-            <h1 class="collapsible-header">8. Quick Reference Templates</h1>
-            <div class="collapsible-content">
-                
-                <p>Copy and customize these templates for your specific context. All prompts assume you've already established a Claude Project with your research documents uploaded.</p>
-                
-                <h2 id="template-setup">Template 1: Initial Project Setup Prompt</h2>
-                
-                <p>Use this when first creating your Claude Project to establish comprehensive context.</p>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">INITIAL PROJECT SETUP</div>
-                    <div class="prompt-content">I'm [Name], a [year] doctoral student at [Institution] in [Program].
+                    <!-- TAB 5: WORKFLOWS -->
+                    <div id="tab-workflows" class="tab-pane">
+                        <h1>5. Advanced Workflows: Maximizing Your System</h1>
+                        
+                        <p>Now that your system is built, these workflows show you how to use it effectively for common dissertation tasks.</p>
+                        
+                        <h2>Workflow 1: Literature Review Development</h2>
+                        
+                        <p>This workflow guides you through systematic literature review development over 12 weeks.</p>
+                        
+                        <h3>Week 1-4: Core Theory Phase</h3>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Activity</th>
+                                    <th>Claude Prompt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>Upload 2-3 theory sources to Zotero</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday-Thursday</td>
+                                    <td>Create literature notes in Obsidian</td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>Synthesis session with Claude</td>
+                                    <td>"Help me synthesize..."</td>
+                                </tr>
+                                <tr>
+                                    <td>Weekend</td>
+                                    <td>Draft 1-2 pages in Chapter 2</td>
+                                    <td>—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h2>Workflow 2: Theoretical Framework Refinement</h2>
+                        <h2>Workflow 3: Coding and Analysis Support</h2>
+                        
+                        <p><em>Additional workflow details available in downloadable guide</em></p>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "6. Quality Control" to learn how to maintain academic integrity.</p>
+                    </div>
+                    
+                    <!-- TAB 6: QUALITY CONTROL -->
+                    <div id="tab-quality" class="tab-pane">
+                        <h1>6. Quality Control & Ethics</h1>
+                        
+                        <p>Maintaining academic integrity while using AI assistance requires clear boundaries, verification protocols, and transparent documentation.</p>
+                        
+                        <h2>What AI Does in Your System</h2>
+                        
+                        <p><strong>APPROPRIATE AI USES:</strong></p>
+                        <ul>
+                            <li>Provides structural frameworks and organizational schemes</li>
+                            <li>Offers synthesis strategies and analytical approaches</li>
+                            <li>Generates example prompts and templates</li>
+                            <li>Asks clarifying questions to refine your thinking</li>
+                            <li>Identifies gaps in reasoning or argumentation</li>
+                            <li>Suggests connections between concepts or sources</li>
+                        </ul>
+                        
+                        <h2>What AI Does NOT Do</h2>
+                        
+                        <p><strong>INAPPROPRIATE AI USES:</strong></p>
+                        <ul>
+                            <li>Write your dissertation sections or chapters</li>
+                            <li>Analyze your actual research data</li>
+                            <li>Make methodological decisions for you</li>
+                            <li>Conduct literature reviews on your behalf</li>
+                            <li>Interpret your research findings</li>
+                            <li>Replace your scholarly judgment</li>
+                        </ul>
+                        
+                        <div class="callout">
+                            <p><strong>THE LINE: Consultation vs. Creation</strong></p>
+                            <p>AI should help you think more clearly about your work, not think for you. If you can't explain a concept, decision, or argument without referencing the AI conversation, you've crossed the line from consultation into dependence.</p>
+                        </div>
+                        
+                        <p><strong>Complete integrity framework:</strong> <a href="framework.html">See Academic Integrity Framework →</a></p>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "7. Troubleshooting" for solutions to common problems.</p>
+                    </div>
+                    
+                    <!-- TAB 7: TROUBLESHOOTING -->
+                    <div id="tab-troubleshooting" class="tab-pane">
+                        <h1>7. Troubleshooting & Adaptation</h1>
+                        
+                        <p>Common challenges, solutions, and strategies for adapting this system to different contexts.</p>
+                        
+                        <h2>Common Problems & Solutions</h2>
+                        
+                        <h3>Problem 1: AI Responses Too Generic</h3>
+                        
+                        <p><strong>SYMPTOMS:</strong></p>
+                        <ul>
+                            <li>Advice could apply to any dissertation</li>
+                            <li>Missing your specific research context</li>
+                            <li>Recommendations don't fit your methodology</li>
+                            <li>Suggestions ignore your theoretical framework</li>
+                        </ul>
+                        
+                        <p><strong>SOLUTIONS:</strong></p>
+                        <ol>
+                            <li>Add more context to your custom instructions in Project Settings</li>
+                            <li>Upload additional project-specific documents</li>
+                            <li>Start prompts with 'Given my specific focus on [X]...'</li>
+                            <li>Provide concrete examples from your actual work</li>
+                            <li>Push back explicitly: 'This is too general. Here's my specific situation...'</li>
+                        </ol>
+                        
+                        <h3>Problem 2: System Feels Overwhelming</h3>
+                        <h3>Problem 3: Over-Reliance on AI</h3>
+                        
+                        <p><em>Additional troubleshooting details available in downloadable guide</em></p>
+                        
+                        <p style="margin-top: 40px;"><strong>Next:</strong> Click "8. Templates" for quick-reference resources.</p>
+                    </div>
+                    
+                    <!-- TAB 8: TEMPLATES -->
+                    <div id="tab-templates" class="tab-pane">
+                        <h1>8. Quick Reference Templates</h1>
+                        
+                        <p>Copy and customize these templates for your specific context. All prompts assume you've already established a Claude Project with your research documents uploaded.</p>
+                        
+                        <h2>Template 1: Initial Project Setup Prompt</h2>
+                        
+                        <div class="code-block">
+I'm [Name], a [year] doctoral student at [Institution] in [Program].
 
 PROJECT OVERVIEW:
 - Research Question: [RQ]
@@ -1928,301 +465,31 @@ WHAT I NEED HELP WITH:
 1. [Specific challenge 1]
 2. [Specific challenge 2]
 3. [Specific challenge 3]
-
-WHAT I DON'T NEED HELP WITH:
-[Be explicit about boundaries]
-
-MY WORKING STYLE:
-[How you prefer feedback, formats, interaction style]
-
-IMMEDIATE NEXT STEPS:
-[What you're working on this week]</div>
+                        </div>
+                        
+                        <h2>Template 2: Weekly Check-In</h2>
+                        <h2>Template 3: Advisor Meeting Prep</h2>
+                        
+                        <p><strong>Access all templates:</strong> <a href="downloads.html">Download Templates →</a></p>
+                        
+                        <h2 style="margin-top: 60px;">Conclusion: Your Path Forward</h2>
+                        
+                        <p>You now have a complete framework for building and using an AI-assisted dissertation management system. Remember:</p>
+                        
+                        <ul>
+                            <li>Start small and build incrementally</li>
+                            <li>Customize ruthlessly for your needs</li>
+                            <li>Maintain scholarly ownership always</li>
+                            <li>Verify everything independently</li>
+                            <li>Document your process transparently</li>
+                            <li>Balance AI support with human guidance</li>
+                            <li>Be patient as your system evolves</li>
+                        </ul>
+                        
+                        <p style="font-size: 18px; margin-top: 40px;"><strong>Good luck with your dissertation!</strong></p>
+                    </div>
+                    
                 </div>
-                
-                <h2>Template 2: Theoretical Framework Development</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">FRAMEWORK DEVELOPMENT REQUEST</div>
-                    <div class="prompt-content">Help me develop/refine my theoretical framework.
-
-RESEARCH QUESTION: [RQ]
-
-CURRENT THEORETICAL THINKING:
-- Primary Theory: [Theory A] because [reasoning]
-- Secondary/Complementary: [Theory B] because [reasoning]
-
-WHY THESE THEORIES:
-[What drew you to them - be honest]
-
-WHAT I'M UNCERTAIN ABOUT:
-[Specific concerns or questions]
-
-WHAT I NEED:
-- Test alignment between theories and my goals
-- Develop integration logic
-- Create defensive arguments for my choices
-- Map theory to methods
-- Write framework statement for proposal
-
-CONSTRAINTS:
-- Advisor's theoretical orientation: [If relevant]
-- Epistemological commitments: [Your paradigm]
-- Program requirements: [If any]</div>
-                </div>
-                
-                <h2>Template 3: Literature Synthesis</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">LITERATURE SYNTHESIS REQUEST</div>
-                    <div class="prompt-content">I need to synthesize literature on [topic/theme].
-
-SOURCES TO SYNTHESIZE:
-1. Author (Year): [Key point]
-2. Author (Year): [Key point]
-3. Author (Year): [Key point]
-[Include 4-5 sources]
-
-MY THEORETICAL LENS: [How you're analyzing this literature]
-
-WHAT I NEED:
-- Identify the 'conversation' these sources represent
-- Show how scholars build on/respond to each other
-- Use my framework to analyze this literature critically
-- Identify gaps or limitations
-- Position my study within this conversation
-
-DO NOT:
-- Just summarize each source separately
-- Write the paragraph for me
-- Ignore my theoretical framework
-
-DO:
-- Show me synthesis strategies
-- Provide sentence starters
-- Identify connections I might have missed</div>
-                </div>
-                
-                <h2 id="template-coding">Template 4: Coding Dilemma</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">CODING DILEMMA CONSULTATION</div>
-                    <div class="prompt-content">I'm coding [Interview N] and encountered this dilemma:
-
-EXCERPT: "[De-identified quote]"
-
-PARTICIPANT CONTEXT: [Role, demographics, focus]
-
-MY CODING DILEMMA:
-- Applied [Code A] because [reasoning]
-- Considered [Code B] because [reasoning]
-- Uncertain because [specific uncertainty]
-
-RELEVANT DEFINITIONS:
-- Code A: [Definition]
-- Code B: [Definition]
-
-HELP ME:
-1. Clarify the boundary between these codes
-2. Decide which code(s) apply here
-3. Refine definitions if needed
-4. Identify if this is a new pattern</div>
-                </div>
-                
-                <h2 id="template-weekly">Template 5: Weekly Check-In</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">WEEKLY CHECK-IN</div>
-                    <div class="prompt-content">WEEK OF: [Date]
-
-LAST WEEK'S GOALS:
-- [Goal 1]: [Status]
-- [Goal 2]: [Status]
-
-WHAT I ACCOMPLISHED:
-[Specific completions]
-
-WHAT WENT WELL:
-[Successes to celebrate]
-
-THIS WEEK'S GOALS:
-1. [Specific, achievable]
-2. [Specific, achievable]
-3. [Specific, achievable]
-
-TOP PRIORITY: [Most important task]
-
-CHALLENGES: [What might derail me]
-
-SUPPORT NEEDED: [What would help]</div>
-                </div>
-                
-                <h2>Template 6: Advisor Meeting Prep</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">ADVISOR MEETING PREPARATION</div>
-                    <div class="prompt-content">MEETING DATE: [Date and time]
-MEETING PURPOSE: [Regular check-in / Specific topic]
-
-PROGRESS SINCE LAST MEETING:
-- [Accomplishment 1]
-- [Accomplishment 2]
-
-MATERIALS TO SHARE:
-- [Document 1 - status]
-- [Document 2 - status]
-
-QUESTIONS FOR ADVISOR:
-1. [Specific question]
-2. [Specific question]
-
-DECISIONS NEEDED:
-- [Decision point 1]
-- [Decision point 2]
-
-DESIRED OUTCOMES:
-[What you hope to achieve]
-
-Help me create a 1-page meeting agenda and prepare for likely questions.</div>
-                </div>
-                
-                <h2>Template 7: Problem-Solving When Stuck</h2>
-                
-                <div class="prompt-box">
-                    <button class="copy-button" onclick="copyPrompt(this)">Copy</button>
-                    <div class="prompt-title">UNSTUCK REQUEST</div>
-                    <div class="prompt-content">I'm stuck on [specific issue] and need help getting unstuck.
-
-WHAT I'M TRYING TO DO:
-[Describe the task or goal]
-
-WHERE I'M STUCK:
-[Specific point of difficulty]
-
-WHAT I'VE ALREADY TRIED:
-1. [Attempt 1 - result]
-2. [Attempt 2 - result]
-
-WHY THIS MATTERS:
-[Connection to larger project]
-
-HELP ME:
-- Break this into smaller steps
-- Identify what's blocking me
-- Generate alternative approaches
-- Decide what to do first
-
-WHAT SUCCESS LOOKS LIKE:
-[What would constitute progress]</div>
-                </div>
-                
-                <h2>Quick Reference: When to Use Which Template</h2>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>When You're...</th>
-                            <th>Use...</th>
-                            <th>Template Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Starting out</td>
-                            <td>Template 1</td>
-                            <td>Initial Project Setup</td>
-                        </tr>
-                        <tr>
-                            <td>Developing theory</td>
-                            <td>Template 2</td>
-                            <td>Framework Development</td>
-                        </tr>
-                        <tr>
-                            <td>Writing lit review</td>
-                            <td>Template 3</td>
-                            <td>Literature Synthesis</td>
-                        </tr>
-                        <tr>
-                            <td>Coding interviews</td>
-                            <td>Template 4</td>
-                            <td>Coding Dilemmas</td>
-                        </tr>
-                        <tr>
-                            <td>Every week</td>
-                            <td>Template 5</td>
-                            <td>Weekly Check-In</td>
-                        </tr>
-                        <tr>
-                            <td>Before meetings</td>
-                            <td>Template 6</td>
-                            <td>Advisor Meeting Prep</td>
-                        </tr>
-                        <tr>
-                            <td>Feeling stuck</td>
-                            <td>Template 7</td>
-                            <td>Problem-Solving</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <h2>Conclusion: Your Path Forward</h2>
-                
-                <p>You now have a complete framework for building and using an AI-assisted dissertation management system. Remember:</p>
-                
-                <ul>
-                    <li>Start small and build incrementally</li>
-                    <li>Customize ruthlessly for your needs</li>
-                    <li>Maintain scholarly ownership always</li>
-                    <li>Verify everything independently</li>
-                    <li>Document your process transparently</li>
-                    <li>Balance AI support with human guidance</li>
-                    <li>Be patient as your system evolves</li>
-                </ul>
-                
-                <h3>Success Indicators Revisited</h3>
-                
-                <p>You're using this system effectively when you can:</p>
-                
-                <ul>
-                    <li>Articulate your theoretical framework confidently without referencing AI</li>
-                    <li>Locate any source or note within 30 seconds</li>
-                    <li>Catch inconsistencies before others point them out</li>
-                    <li>Maintain consistent progress week over week</li>
-                    <li>Feel more in control and less overwhelmed</li>
-                    <li>Prepare effectively for advisor meetings</li>
-                    <li>Defend all your methodological choices</li>
-                </ul>
-                
-                <h3>Final Reminders</h3>
-                
-                <ol>
-                    <li>You are the scholar; AI is the tool</li>
-                    <li>Progress beats perfection in system building</li>
-                    <li>Transparency maintains integrity</li>
-                    <li>Human guidance is irreplaceable</li>
-                    <li>Your system will evolve with your needs</li>
-                    <li>Document everything for your methodology chapter</li>
-                    <li>Celebrate your progress regularly</li>
-                </ol>
-                
-                <p>You're ready to build your system. Start with Phase 1 in Section 4, and remember: your first version doesn't have to be your final version. Build, use, refine, repeat.</p>
-                
-                <p style="font-size: 18px; margin-top: 40px;"><strong>Good luck with your dissertation!</strong></p>
-                
-                <p style="text-align: center; margin-top: 60px; color: #666; font-style: italic;">— End of Guide —</p>
-                
-            </div>
-        </section>
- 
-            <div class="callout important">
-                <h3>📥 Download Complete Guide</h3>
-                <p>This web version provides overview and navigation. For the complete, detailed guide with all sections fully expanded:</p>
-                <a href="docs/dissertation-guide.html" class="btn" download>Download Complete HTML Guide</a>
-                <a href="docs/dissertation-guide.md" class="btn" download>Download Markdown Version</a>
             </div>
             
             <footer class="footer">
