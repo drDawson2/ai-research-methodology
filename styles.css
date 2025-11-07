@@ -643,7 +643,7 @@ tbody tr:nth-child(even) {
 
 .timeline-label {
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.9em;
