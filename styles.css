@@ -620,7 +620,7 @@ tbody tr:nth-child(even) {
     position: relative;
     height: 4px;
     background: var(--soft-amber);
-    margin: 30px 0;
+    margin: 30px 40px 30px 0;
 }
 
 .timeline-dot {
@@ -655,7 +655,7 @@ tbody tr:nth-child(even) {
 .timeline-details-container {
     position: relative;
     min-height: 200px;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .timeline-detail {
