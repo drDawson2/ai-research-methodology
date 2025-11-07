@@ -299,7 +299,7 @@ ol li {
     margin: 25px 0;
     text-align: center;
     font-family: 'Courier New', monospace;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: var(--rich-brown);
     line-height: 2;
 }
@@ -646,16 +646,18 @@ tbody tr:nth-child(even) {
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.9em;
+    font-size: 0.75em;
     color: var(--text);
     white-space: nowrap;
+    text-align: center;
 }
 
 .timeline-detail {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-out;
-    margin-top: 20px;
+    margin-top: 80px;
+    position: relative;
 }
 
 .timeline-detail.show {
